@@ -64,11 +64,6 @@ img {
   text-transform: uppercase;
 }
 
-.phrase {
-  display: block;
-  white-space: nowrap;
-}
-
 .cap .link:hover,
 .cap .link:focus,
 .btn:focus,
@@ -118,9 +113,6 @@ img {
   padding-bottom: 94px;
 }
 
-.content {
-  padding: 20px 24px;
-}
 /* --------------------------------------------------------------------------------------------------- */
 /* ---Хедер и футер--- */
 /* ---Шапка--- */
@@ -154,6 +146,7 @@ img {
   color: #000000;
 }
 .foot-logo {
+  display: block;
   margin-bottom: 20px;
   color: #ffffff;
 }
@@ -191,14 +184,13 @@ img {
 .foot-contact {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
   font-weight: 400;
   line-height: 1.71;
   color: rgba(255, 255, 255, 0, 6);
 }
 
 .foot-contact-item:not(:last-child) {
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 
 .contact-map {
@@ -239,6 +231,8 @@ img {
 }
 
 .banner-text {
+  max-width: 696px;
+  margin: 0 auto;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -288,6 +282,10 @@ img {
 }
 
 /* ---Наши преимущества--- */
+.advantages {
+  padding-bottom: 0px;
+}
+
 .advantages .cards-item {
   flex-basis: calc((100% - 120px) / 4);
 }
@@ -323,6 +321,10 @@ img {
   font-size: 16px;
   line-height: 1.17;
 }
+
+.team-content {
+  padding: 30px 32px;
+}
 /* ---------------------------------------------------------------------------------------------- */
 /* ---Страница портфолио--- */
 /* ---Общие классы---- */
@@ -340,8 +342,10 @@ img {
   color: var(--primary-text-color);
 }
 
-.portfolio .content {
+.portfolio-content {
+  padding: 20px 24px;
   border: 1px solid #eeeeee;
+  border-top: none;
   background-color: #ffffff;
 }
 
