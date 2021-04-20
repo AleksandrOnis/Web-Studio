@@ -177,8 +177,18 @@ img {
   font-weight: 500;
   line-height: 1.17;
 }
+
+.cap-contact-item {
+  display: flex;
+  align-items: center;
+}
+
 .cap-contact-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.cap-contact-item .link {
+  margin-left: 10px;
 }
 
 .foot-contact {
@@ -296,6 +306,17 @@ img {
   line-height: 1.71;
 }
 
+.advantages-block {
+  margin-bottom: 30px;
+  max-width: 270px;
+  background-color: var(--bg-btn-filter);
+  border-radius: 4px;
+}
+
+.advantages-icon {
+  max-width: 70px;
+  max-height: 70px;
+}
 /* ---Чем мы занимаемся--- */
 
 /* ---Наша команда--- */
