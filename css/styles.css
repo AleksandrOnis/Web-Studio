@@ -170,37 +170,37 @@ img {
   font-size: 14px;
 }
 
-/* ---Контакты--- */
+/* ---Контакты шапка--- */
 .cap-contact {
   display: flex;
   margin-left: auto;
   font-weight: 500;
   line-height: 1.17;
 }
-
 .cap-contact-item {
   display: flex;
   align-items: center;
 }
-
 .cap-contact-item:not(:last-child) {
   margin-right: 50px;
 }
-
-.cap-contact-item:first-child::before {
+.icon-envelope {
   margin-right: 10px;
-  content: '';
   width: 16px;
-  height: 10px;
-  background-image: url('../images/envelope.svg');
-  background-size: contain;
-  background-position: center;
+  height: 12px;
 }
-.cap-contact-item:first-child:hover::before {
-  background-image: url('../images/envelope_hover.svg');
-  }
+.icon-telephone {
+  margin-right: 10px;
+  width: 10px;
+  height: 16px;
 }
-
+.contact-envelope:hover .icon-envelope {
+  stroke: var(--accent-color);
+}
+.contact-telephone:hover .icon-telephone {
+  stroke: var(--accent-color);
+}
+/* ---Контакты футер--- */
 .foot-contact {
   display: flex;
   flex-direction: column;
@@ -316,17 +316,6 @@ img {
   line-height: 1.71;
 }
 
-.advantages-block {
-  margin-bottom: 30px;
-  max-width: 270px;
-  background-color: var(--bg-btn-filter);
-  border-radius: 4px;
-}
-
-.advantages-icon {
-  max-width: 70px;
-  max-height: 70px;
-}
 /* ---Чем мы занимаемся--- */
 
 /* ---Наша команда--- */
