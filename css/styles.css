@@ -316,6 +316,18 @@ img {
   line-height: 1.71;
 }
 
+.advantages-cards-block {
+  padding: 25px 0;
+  margin-bottom: 30px;
+  max-width: 270px;
+  text-align: center;
+  background-color: var(--bg-btn-filter);
+}
+.advantages-icon {
+  width: 70px;
+  height: 70px;
+}
+
 /* ---Чем мы занимаемся--- */
 
 /* ---Наша команда--- */
