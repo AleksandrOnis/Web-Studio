@@ -187,8 +187,18 @@ img {
   margin-right: 50px;
 }
 
-.cap-contact-item .link {
-  margin-left: 10px;
+.cap-contact-item:first-child::before {
+  margin-right: 10px;
+  content: '';
+  width: 16px;
+  height: 10px;
+  background-image: url('../images/envelope.svg');
+  background-size: contain;
+  background-position: center;
+}
+.cap-contact-item:first-child:hover::before {
+  background-image: url('../images/envelope_hover.svg');
+  }
 }
 
 .foot-contact {
