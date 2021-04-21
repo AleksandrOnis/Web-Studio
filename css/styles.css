@@ -208,11 +208,13 @@ img {
   height: 16px;
 }
 
-.contact-envelope:hover .icon-envelope {
+.contact-envelope:hover .icon-envelope,
+.contact-envelope:focus .icon-envelope {
   stroke: var(--accent-color);
 }
 
-.contact-telephone:hover .icon-telephone {
+.contact-telephone:hover .icon-telephone,
+.contact-telephone:focus .icon-telephone {
   stroke: var(--accent-color);
 }
 /* ---Контакты футер--- */
