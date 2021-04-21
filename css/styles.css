@@ -378,18 +378,33 @@ img {
 
 .block-social-link {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
 }
 
 .block-social-link:not(:last-child) {
   margin-right: 10px;
 }
 
-/* .icon-social-link {
-} */
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+
+.social-link:hover {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.icon-social-link {
+  fill: currentColor;
+  color: #afb1b8;
+}
+
+.social-link:hover .icon-social-link {
+  color: #ffffff;
+}
 
 .instagram {
   width: 20px;
