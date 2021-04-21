@@ -94,9 +94,11 @@ img {
 .btn-accent:hover {
   color: #ffffff;
 }
+
 .active-menu {
   color: var(--accent-color);
 }
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -136,6 +138,7 @@ img {
   line-height: 1.17;
   text-decoration: none;
 }
+
 .logo-text {
   color: var(--accent-color);
 }
@@ -145,6 +148,7 @@ img {
   margin-right: 93px;
   color: #000000;
 }
+
 .foot-logo {
   display: block;
   margin-bottom: 20px;
@@ -177,26 +181,32 @@ img {
   font-weight: 500;
   line-height: 1.17;
 }
+
 .cap-contact-item {
   display: flex;
   align-items: center;
 }
+
 .cap-contact-item:not(:last-child) {
   margin-right: 50px;
 }
+
 .icon-envelope {
   margin-right: 10px;
   width: 16px;
   height: 12px;
 }
+
 .icon-telephone {
   margin-right: 10px;
   width: 10px;
   height: 16px;
 }
+
 .contact-envelope:hover .icon-envelope {
   stroke: var(--accent-color);
 }
+
 .contact-telephone:hover .icon-telephone {
   stroke: var(--accent-color);
 }
@@ -336,6 +346,7 @@ img {
 }
 
 .team .cards-item {
+  padding-bottom: 30px;
   flex-basis: calc((100% - 120px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -348,6 +359,7 @@ img {
   font-weight: 500;
   font-size: 16px;
 }
+
 .team-text {
   text-align: center;
   font-size: 16px;
@@ -357,6 +369,48 @@ img {
 .team-content {
   padding: 30px 32px;
 }
+
+.team-icons {
+  display: flex;
+  margin: 0 auto;
+  max-width: 206px;
+}
+
+.block-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+}
+
+.block-social-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* .icon-social-link {
+} */
+
+.instagram {
+  width: 20px;
+  height: 20px;
+}
+
+.twitter {
+  width: 20px;
+  height: 16.25px;
+}
+
+.facebook {
+  width: 10px;
+  height: 20px;
+}
+
+.linkedin {
+  width: 20px;
+  height: 20px;
+}
+
 /* ---------------------------------------------------------------------------------------------- */
 /* ---Страница портфолио--- */
 /* ---Общие классы---- */
