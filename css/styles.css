@@ -119,6 +119,7 @@ img {
   fill: currentColor;
   color: #afb1b8;
 }
+
 /* --------------------------------------------------------------------------------------------------- */
 /* ---Хедер и футер--- */
 /* ---Шапка--- */
@@ -238,9 +239,35 @@ img {
 
 .foot .container {
   display: flex;
+  align-items: baseline;
 }
 .foot-block {
   flex-basis: 270px;
+}
+
+.foot-block-join {
+  flex-basis: 206px;
+  margin-left: 70px;
+}
+.join-text {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.14;
+  color: #ffffff;
+}
+
+.foot .block-icons {
+  margin-top: 20px;
+}
+
+.foot .icon {
+  color: #ffffff;
+}
+
+.foot .social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
 }
 
 /* ---------------------------------------------------------------------------------------------- */
@@ -374,7 +401,7 @@ img {
   padding: 30px 32px;
 }
 
-.team-icons {
+.block-icons {
   display: flex;
   margin: 0 auto;
   max-width: 206px;
@@ -401,7 +428,7 @@ img {
   border-radius: 50%;
 }
 
-.social-link:hover .icon-social-link {
+.social-link:hover .icon {
   color: #ffffff;
 }
 
