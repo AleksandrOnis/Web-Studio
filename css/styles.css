@@ -196,6 +196,15 @@ img {
   margin-right: 50px;
 }
 
+.contact-link {
+  display: flex;
+  align-items: center;
+}
+
+.contact .icon {
+  color: #757575;
+}
+
 .icon-envelope {
   margin-right: 10px;
   width: 16px;
@@ -210,12 +219,12 @@ img {
 
 .contact-envelope:hover .icon-envelope,
 .contact-envelope:focus .icon-envelope {
-  stroke: var(--accent-color);
+  color: var(--accent-color);
 }
 
 .contact-telephone:hover .icon-telephone,
 .contact-telephone:focus .icon-telephone {
-  stroke: var(--accent-color);
+  color: var(--accent-color);
 }
 /* ---Контакты футер--- */
 .foot-contact {
