@@ -115,6 +115,10 @@ img {
   padding-bottom: 94px;
 }
 
+.icon {
+  fill: currentColor;
+  color: #afb1b8;
+}
 /* --------------------------------------------------------------------------------------------------- */
 /* ---Хедер и футер--- */
 /* ---Шапка--- */
@@ -397,11 +401,6 @@ img {
   border-radius: 50%;
 }
 
-.icon-social-link {
-  fill: currentColor;
-  color: #afb1b8;
-}
-
 .social-link:hover .icon-social-link {
   color: #ffffff;
 }
@@ -424,6 +423,33 @@ img {
 .linkedin {
   width: 20px;
   height: 20px;
+}
+
+/* ---Постоянные клиенты--- */
+.clients .cards-item {
+  flex-basis: calc((100% - 180px) / 6);
+}
+
+.clients-cards-block {
+  display: inline-block;
+  padding: 16px 32px;
+  max-width: 170px;
+  text-align: center;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.clients-cards-block:hover {
+  border-color: var(--accent-color);
+}
+
+.clients-cards-block:hover .clients-icon {
+  color: var(--accent-color);
+}
+
+.clients-icon {
+  width: 106px;
+  height: 60px;
 }
 
 /* ---------------------------------------------------------------------------------------------- */
