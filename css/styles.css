@@ -388,7 +388,6 @@ img {
 }
 
 .team .cards-item {
-  padding-bottom: 30px;
   flex-basis: calc((100% - 120px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -397,12 +396,14 @@ img {
 }
 
 .team-title {
+  margin-bottom: 10px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
 }
 
 .team-text {
+  margin-bottom: 16px;
   text-align: center;
   font-size: 16px;
   line-height: 1.17;
@@ -415,11 +416,6 @@ img {
 .block-icons {
   display: flex;
   margin: 0 auto;
-  max-width: 206px;
-}
-
-.block-social-link {
-  display: flex;
 }
 
 .block-social-link:not(:last-child) {
