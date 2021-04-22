@@ -462,32 +462,38 @@ img {
 }
 
 /* ---Постоянные клиенты--- */
-.clients .cards-item {
-  flex-basis: calc((100% - 180px) / 6);
+.block-clients {
+  display: flex;
+  justify-content: center;
 }
 
-.clients-cards-block {
-  display: inline-block;
-  padding: 16px 32px;
-  max-width: 170px;
-  text-align: center;
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  display: flex;
+  padding: 16px 0;
+  width: 170px;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-}
-
-.clients-cards-block:hover,
-.clients-cards-block:focus {
-  border-color: var(--accent-color);
-}
-
-.clients-cards-block:hover .clients-icon,
-.clients-cards-block:focus .clients-icon {
-  color: var(--accent-color);
 }
 
 .clients-icon {
   width: 106px;
   height: 60px;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: var(--accent-color);
+}
+
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  color: var(--accent-color);
 }
 
 /* ---------------------------------------------------------------------------------------------- */
