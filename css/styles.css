@@ -1,4 +1,5 @@
 :root {
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
@@ -96,7 +97,18 @@ img {
 }
 
 .active-menu {
+  position: relative;
+  padding-bottom: 28px;
   color: var(--accent-color);
+}
+.active-menu::after {
+  position: absolute;
+  top: calc(100% - 0.4px);
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
 }
 
 .visually-hidden {
