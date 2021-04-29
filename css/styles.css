@@ -101,13 +101,12 @@ img {
 
 .active-menu {
   position: relative;
-  padding-bottom: 28px;
   color: var(--accent-color);
 }
 .active-menu::after {
   position: absolute;
-  top: calc(100% - 0.4px);
   left: 0;
+  bottom: -3.7px;
   content: '';
   width: 100%;
   height: 4px;
@@ -186,6 +185,9 @@ img {
   color: var(--title-text-color);
 }
 
+.navigation .link {
+  padding-bottom: 28px;
+}
 .navigation-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -395,6 +397,24 @@ img {
 }
 
 /* ---Чем мы занимаемся--- */
+.working .cards-item {
+  position: relative;
+}
+
+.working-thumb {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 27px 0;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.working-thumb .studio-title-h3 {
+  color: #ffffff;
+}
 
 /* ---Наша команда--- */
 .team {
