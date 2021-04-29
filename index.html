@@ -77,7 +77,11 @@
           <h1 class="banner-text upper-case">
             Эффективные решения для вашего бизнеса
           </h1>
-          <button class="btn btn-order btn-accent" type="button">
+          <button
+            data-modal-open
+            class="btn btn-order btn-accent"
+            type="button"
+          >
             Заказать услугу
           </button>
         </div>
@@ -574,5 +578,20 @@
         </div>
       </div>
     </footer>
+
+    <!-- модальное окно и подключение modal.js -->
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close class="modal-btn">
+          <svg class="icon-close">
+                  <use
+                    href="./images/icons.svg#close"
+                    width="11"
+                    height="11"
+                  ></use></svg
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
