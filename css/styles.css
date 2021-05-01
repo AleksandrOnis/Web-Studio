@@ -76,8 +76,7 @@ img {
 
 .btn {
   padding: 6px 22px;
-  border: none;
-  border-radius: 4px;
+
   min-height: 38px;
   font-weight: 500;
   font-size: 16px;
@@ -85,18 +84,29 @@ img {
   letter-spacing: 0.03em;
   cursor: pointer;
   color: var(--title-text-color);
+  border: none;
+  border-radius: 4px;
   transition: color var(--duration) var(--timing-function);
   background-color: var(--bg-btn-filtr);
 }
 
 .btn-accent {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  min-width: 200px;
+  min-height: 50px;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
   color: #ffffff;
   background-color: var(--accent-color);
-}
-
-.btn-accent:focus,
-.btn-accent:hover {
-  color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
 }
 
 .active-menu {
@@ -261,6 +271,7 @@ img {
 .contact-map {
   color: #ffffff;
 }
+
 /* ---Футер--- */
 .foot {
   padding: 60px 0;
@@ -272,11 +283,7 @@ img {
   align-items: baseline;
 }
 
-.foot-block-join {
-  flex-basis: 206px;
-  margin-left: 70px;
-}
-.join-text {
+.foot-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -284,17 +291,66 @@ img {
   color: #ffffff;
 }
 
-.foot .block-icons {
-  margin-top: 20px;
-}
-
 .foot .icon {
   color: #ffffff;
+}
+
+/*  ---Блок присоединяйтесь--- */
+.foot-block-join {
+  flex-basis: 206px;
+  margin-left: 70px;
+}
+
+.foot .block-icons {
+  margin-top: 20px;
 }
 
 .foot .social-link {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+}
+
+/*  ---Блок подпишитесь на рассылку--- */
+.subscribe-block {
+  flex-basis: 570px;
+  margin-left: 93px;
+}
+
+.subscribe-form {
+  position: relative;
+  margin-top: 20px;
+}
+
+.subscribe-field {
+  padding: 15px 0;
+  padding-left: 79px;
+  width: 358px;
+  height: 50px;
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+}
+
+.subscribe-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(16px, 17px);
+}
+
+.subscribe-field-text {
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.icon-send {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
 }
 
 /* ---------------------------------------------------------------------------------------------- */
@@ -328,16 +384,8 @@ img {
   color: #ffffff;
 }
 
-.btn-order {
+.banner .btn-accent {
   margin-top: 30px;
-  padding: 10px 32px;
-  min-width: 200px;
-  min-height: 50px;
-  font-family: Roboto;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
 }
 
 /* ---Общее для секций--- */
@@ -643,6 +691,9 @@ img {
   position: absolute;
   top: 8px;
   right: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30px;
   height: 30px;
   background: #ffffff;
@@ -652,6 +703,6 @@ img {
 }
 
 .icon-close {
-  width: 11px;
-  height: 11px;
+  width: 14px;
+  height: 14px;
 }

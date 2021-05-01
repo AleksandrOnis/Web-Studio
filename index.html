@@ -77,11 +77,7 @@
           <h1 class="banner-text upper-case">
             Эффективные решения для вашего бизнеса
           </h1>
-          <button
-            data-modal-open
-            class="btn btn-order btn-accent"
-            type="button"
-          >
+          <button data-modal-open class="btn-accent" type="button">
             Заказать услугу
           </button>
         </div>
@@ -532,7 +528,7 @@
           </address>
         </div>
         <div class="foot-block-join">
-          <span class="upper-case join-text">Присоединяйтесь</span>
+          <span class="upper-case foot-title">Присоединяйтесь</span>
           <ul class="block-icons list">
             <li class="block-social-link">
               <a class="social-link link" href=""
@@ -576,6 +572,30 @@
             </li>
           </ul>
         </div>
+        <div class="subscribe-block">
+          <span class="upper-case foot-title">Подпишитесь на рассылку</span>
+          <form class="subscribe-form">
+            <label
+              ><span class="subscribe-label subscribe-field-text">E-mail</span>
+              <input
+                type="email"
+                name="subscribe"
+                autocomplete="off"
+                class="subscribe-field subscribe-field-text"
+              />
+            </label>
+            <button type="submit" class="btn-accent">
+              Подписаться
+              <svg class="icon icon-send">
+                <use
+                  href="./images/icons.svg#send"
+                  width="24"
+                  height="24"
+                ></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
 
@@ -584,11 +604,8 @@
       <div class="modal">
         <button data-modal-close class="modal-btn">
           <svg class="icon-close">
-                  <use
-                    href="./images/icons.svg#close"
-                    width="11"
-                    height="11"
-                  ></use></svg
+            <use href="./images/icons.svg#close" width="14" height="14"></use>
+          </svg>
         </button>
       </div>
     </div>
