@@ -95,8 +95,8 @@ img {
   align-items: center;
   justify-content: center;
   padding: 10px 0;
-  min-width: 200px;
-  min-height: 50px;
+  width: 200px;
+  height: 50px;
   font-family: Roboto;
   font-weight: 700;
   font-size: 16px;
@@ -322,7 +322,6 @@ img {
 }
 
 .subscribe-field {
-  padding: 15px 0;
   padding-left: 79px;
   width: 358px;
   height: 50px;
@@ -338,7 +337,7 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(16px, 17px);
+  transform: translate(16px, 15px);
 }
 
 .subscribe-field-text {
@@ -679,7 +678,8 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  min-width: 528px;
+  padding: 40px;
+  width: 528px;
   min-height: 581px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -705,4 +705,79 @@ img {
 .icon-close {
   width: 14px;
   height: 14px;
+  color: #000000;
+}
+
+.modal-btn:hover .icon-close,
+.modal-btn:focus .icon-close {
+  color: var(--accent-color);
+}
+
+.modal-title {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: var(--title-text-color);
+}
+.modal-form {
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.modal-text {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--primary-text-color);
+}
+
+.modal-form-label {
+  position: relative;
+}
+
+.modal-field {
+  margin-top: 4px;
+  padding-left: 42px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+}
+
+.modal-field:focus {
+  border: 1px solid var(--accent-color);
+}
+
+.modal-field:focus + .modal-form-icon {
+  color: var(--accent-color);
+}
+
+.modal-form-list:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.modal-field-comment {
+  padding: 12px 16px;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  letter-spacing: 0.01em;
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(12px, 30px);
+  width: 18px;
+  height: 18px;
+  color: #000000;
+}
+
+.modal .btn-accent {
+  display: block;
+  margin: 0 auto;
 }
