@@ -608,8 +608,8 @@
           </svg>
         </button>
         <h1 class="modal-title">Оставьте свои данные, мы вам перезвоним</h1>
-        <form class="modal-form modal-text">
-          <ul class="list">
+        <form>
+          <ul class="list modal-list modal-text">
             <li class="modal-form-list">
               <label class="modal-form-label">
                 Имя
@@ -660,6 +660,18 @@
               </label>
             </li>
           </ul>
+          <label class="modal-label-checkbox">
+    <input type="checkbox" name="sign" value="agreement" class="modal-checkbox"/>
+    <svg class="icon modal-form-icon-checkbox" width="16" height="15">
+      <use href="./images/icons.svg#checkbox">
+      </use>
+    </svg>
+    <svg class="icon modal-form-icon-sign" width="16" height="15">
+      <use href="./images/icons.svg#sign">
+      </use>
+    </svg>
+    Соглашаюсь с рассылкой и принимаю <a href="" class="link modal-link-agreement">Условия договора</a> 
+  </label>
         </form>
         <button type="submit" class="btn-accent">Отправить</button>
       </div>
