@@ -44,14 +44,14 @@ img {
 
 /* Общие классы */
 
-.list {
+.lists {
   padding-left: 0;
   margin: 0;
   list-style: none;
   font-style: normal;
 }
 
-.link {
+.links {
   text-decoration: none;
   color: inherit;
   transition: color var(--duration) var(--timing-function);
@@ -67,16 +67,8 @@ img {
   text-transform: uppercase;
 }
 
-.cap .link:hover,
-.cap .link:focus,
-.btn:focus,
-.btn:hover {
-  color: var(--accent-color);
-}
-
 .btn {
   padding: 6px 22px;
-
   min-height: 38px;
   font-weight: 500;
   font-size: 16px;
@@ -110,11 +102,16 @@ img {
   border-radius: 4px;
 }
 
-.active-menu {
+.btn:focus,
+.btn:hover {
+  color: var(--accent-color);
+}
+
+.navigation__item--active {
   position: relative;
   color: var(--accent-color);
 }
-.active-menu::after {
+.navigation__item--active::after {
   position: absolute;
   top: 100%;
   left: 0;
@@ -141,7 +138,7 @@ img {
   padding-bottom: 94px;
 }
 
-.icon {
+.icons {
   fill: currentColor;
   color: #afb1b8;
   transition: color var(--duration) var(--timing-function);
@@ -150,12 +147,12 @@ img {
 /* --------------------------------------------------------------------------------------------------- */
 /* ---Хедер и футер--- */
 /* ---Шапка--- */
-.page-header {
+.header {
   border: 1px solid #ececec;
   background-color: #ffffff;
 }
 
-.cap {
+.page-header__container {
   display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -169,9 +166,6 @@ img {
   font-size: 26px;
   line-height: 1.17;
   text-decoration: none;
-}
-
-.logo--color {
   color: var(--accent-color);
 }
 
@@ -181,7 +175,7 @@ img {
   color: #000000;
 }
 
-.page-footer__logo {
+.page-footer___logo {
   display: block;
   margin-bottom: 20px;
   color: #ffffff;
@@ -200,7 +194,13 @@ img {
 .navigation .link {
   padding: 28px 0;
 }
-.navigation-item:not(:last-child) {
+
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.navigation__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -210,46 +210,39 @@ img {
 }
 
 /* ---Контакты шапка--- */
-.cap-contact {
+.page-header__contact {
   display: flex;
   margin-left: auto;
   font-weight: 500;
   line-height: 1.17;
 }
 
-.cap-contact-item {
+.contact__item {
   display: flex;
   align-items: center;
 }
 
-.cap-contact-item:not(:last-child) {
+.contact__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact-link {
+.link__communication {
   display: flex;
   align-items: center;
 }
 
-.contact .icon {
+.contact__icon {
   color: #757575;
-}
-
-.icon-envelope {
   margin-right: 10px;
 }
 
-.icon-telephone {
-  margin-right: 10px;
-}
-
-.contact-envelope:hover .icon-envelope,
-.contact-envelope:focus .icon-envelope {
+.icon__envelope:hover .icon__envelope--accent,
+.icon__envelope:focus .icon__envelope--accent {
   color: var(--accent-color);
 }
 
-.contact-telephone:hover .icon-telephone,
-.contact-telephone:focus .icon-telephone {
+.icon__telephone:hover .icon__telephone--accent,
+.icon__telephone:focus .icon__telephone--accent {
   color: var(--accent-color);
 }
 /* ---Контакты футер--- */

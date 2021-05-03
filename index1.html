@@ -20,30 +20,30 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="cap container">
+      <div class="container page-header__container">
         <a class="logo page-header__logo" href="./" lang="en"
-          ><span class="logo--color">Web</span>Studio</a
+          ><span class="logo__text">Web</span>Studio</a
         >
         <nav>
-          <ul class="navigation list">
-            <li class="navigation-item">
-              <a class="link active-menu" href="./index.html">Студия</a>
+          <ul class="lists navigation ">
+            <li class="navigation__item">
+              <a class="links page-header__link--active" href="./index.html">Студия</a>
             </li>
-            <li class="navigation-item">
-              <a class="link" href="./portfolio.html">Портфолио</a>
+            <li class="navigation__item">
+              <a class="links page-header__link--active" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="navigation-item">
-              <a class="link" href="">Контакты</a>
+            <li class="navigation__item">
+              <a class="links page-header__link--active" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="list contact cap-contact">
-          <li class="cap-contact-item">
+        <ul class="lists contact page-header__contact">
+          <li class="contact__item">
             <a
-              class="contact-link contact-envelope link"
+              class="links link__communication icon__envelope"
               href="mailto:info@devstudio.com"
             >
-              <svg class="icon icon-envelope" width="16" height="12">
+              <svg class="icons  contact__icon icon__envelope--accent" width="16" height="12">
                 <use
                   href="./images/icons.svg#envelope"
                 ></use>
@@ -51,12 +51,12 @@
                 info@devstudio.com
             </a>
           </li>
-          <li class="cap-contact-item">
+          <li class="contact__item">
             <a
-              class="contact-link contact-telephone link"
+              class="links link__communication icon__telephone"
               href="tel:+380961111111"
             >
-              <svg class="icon icon-telephone" width="10" height="16">
+              <svg class="icons contact__icon icon__telephone--accent" width="10" height="16">
                 <use
                   href="./images/icons.svg#telephone"
                 ></use>
@@ -83,7 +83,7 @@
       <section class="section advantages">
         <div class="container">
           <h2 class="studio-title-h2 visually-hidden">Наши преимущества</h2>
-          <ul class="cards list">
+          <ul class="cards lists">
             <li class="cards-item">
               <div class="advantages-cards-block">
                 <svg  width="70" height="70">
@@ -147,7 +147,7 @@
       <section class="section working">
         <div class="container">
           <h2 class="studio-title-h2">Чем мы занимаемся</h2>
-          <ul class="cards list">
+          <ul class="cards lists">
             <li class="cards-item">
               <div class="working-thumb">
                 <h3 class="studio-title-h3 upper-case">
@@ -190,7 +190,7 @@
       <section class="section team">
         <div class="container">
           <h2 class="studio-title-h2">Наша команда</h2>
-          <ul class="cards list">
+          <ul class="cards lists">
             <li class="cards-item">
               <img
                 src="./images/product_designer.jpg"
@@ -201,7 +201,7 @@
               <div class="team-content">
                 <h3 class="studio-title-h3 team-title">Игорь Демьяненко</h3>
                 <p class="team-text" lang="en">Product Designer</p>
-                <ul class="block-icons list">
+                <ul class="block-icons lists">
                   <li class="block-social-link">
                     <a class="social-link link" href=""
                       ><svg class="icon instagram" width="70" height="70">
@@ -247,7 +247,7 @@
               <div class="team-content">
                 <h3 class="studio-title-h3 team-title">Ольга Репина</h3>
                 <p class="team-text" lang="en">Frontend Developer</p>
-                <ul class="block-icons list">
+                <ul class="block-icons lists">
                   <li class="block-social-link">
                     <a class="social-link link" href=""
                       ><svg class="icon instagram"  width="20" height="20">
@@ -293,7 +293,7 @@
               <div class="team-content">
                 <h3 class="studio-title-h3 team-title">Николай Тарасов</h3>
                 <p class="team-text" lang="en">Marketing</p>
-                <ul class="block-icons list">
+                <ul class="block-icons lists">
                   <li class="block-social-link">
                     <a class="social-link link" href=""
                       ><svg class="icon instagram" width="20" height="20">
@@ -340,7 +340,7 @@
                 <h3 class="studio-title-h3 team-title">Михаил Ермаков</h3>
                 <p class="team-text" lang="en">UI Designer</p>
 
-                <ul class="block-icons list">
+                <ul class="block-icons lists">
                   <li class="block-social-link">
                     <a class="social-link link" href=""
                       ><svg class="icon instagram" width="20" height="20">
@@ -384,7 +384,7 @@
       <section class="section clients">
         <div class="container">
           <h2 class="studio-title-h2">Постоянные клиенты</h2>
-          <ul class="cards list">
+          <ul class="cards lists">
             <li class="cards-item">
               <a class="clients-link link" href="">
                 <svg class="clients-icon icon" width="106" height="60">
@@ -446,11 +446,11 @@
     <footer class="foot">
       <div class="container">
         <div>
-          <a class="logo page-footer__logo" href="./index.html" lang="en"
-            ><span class="logo--color">Web</span>Studio</a
+          <a class="logo foot-logo" href="./index.html" lang="en"
+            ><span class="logo-text">Web</span>Studio</a
           >
           <address>
-            <ul class="list contact foot-contact">
+            <ul class="lists contact foot-contact">
               <li class="foot-contact-item">
                 <a
                   class="link contact-map"
@@ -473,7 +473,7 @@
         </div>
         <div class="foot-block-join">
           <span class="upper-case foot-title">Присоединяйтесь</span>
-          <ul class="block-icons list">
+          <ul class="block-icons lists">
             <li class="block-social-link">
               <a class="social-link link" href=""
                 ><svg class="icon instagram" width="20" height="20">
@@ -543,7 +543,7 @@
         </button>
         <h1 class="modal-title">Оставьте свои данные, мы вам перезвоним</h1>
         <form>
-          <ul class="list modal-list modal-text">
+          <ul class="lists modal-list modal-text">
             <li class="modal-form-list">
               <label class="modal-form-label">
                 Имя
