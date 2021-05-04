@@ -197,10 +197,10 @@ img {
   color: var(--title-text-color);
 }
 
-.navigation .link {
+.navigation__item--padding {
   padding: 28px 0;
 }
-.navigation-item:not(:last-child) {
+.navigation__item:not(:last-child) {
   margin-right: 50px;
 }
 
