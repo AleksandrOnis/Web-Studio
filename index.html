@@ -536,66 +536,66 @@
     <!-- модальное окно и подключение modal.js -->
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
-        <button data-modal-close class="modal-btn">
-          <svg class="icon icon-close" width="18" height="18">
+        <button data-modal-close class="modal__btn">
+          <svg class="icon icon__close" width="18" height="18">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        <h1 class="modal-title">Оставьте свои данные, мы вам перезвоним</h1>
+        <h1 class="modal__title">Оставьте свои данные, мы вам перезвоним</h1>
         <form>
-          <ul class="list modal-list modal-text">
-            <li class="modal-form-list">
-              <label class="modal-form-label">
+          <ul class="list modal-form__list">
+            <li class="modal-form__item">
+              <label class="modal-form__label--position">
                 Имя
-                <input type="" name="name" autocomplete="off" class="modal-field"/>
-                <svg class="icon modal-form-icon" width="18" height="18">
+                <input type="" name="name" autocomplete="off" class="modal-form__field"/>
+                <svg class="icon modal-form__icon" width="18" height="18">
                   <use
                     href="./images/icons.svg#person"
                   ></use>
                 </svg>
               </label>
             </li>
-            <li class="modal-form-list">
-              <label class="modal-form-label">
+            <li class="modal-form__item">
+              <label class="modal-form__label--position">
                 Телефон
-                <input type="tel" name="phone" autocomplete="off" class="modal-field" />
-                <svg class="icon modal-form-icon" width="18" height="18">
+                <input type="tel" name="phone" autocomplete="off" class="modal-form__field" />
+                <svg class="icon modal-form__icon" width="18" height="18">
                   <use
                     href="./images/icons.svg#phone"
                   ></use>
                 </svg>
               </label">
             </li>
-            <li class="modal-form-list">
-              <label class="modal-form-label">
+            <li class="modal-form__item">
+              <label class="modal-form__label--position">
                 Почта
-                <input type="email" name="mail" autocomplete="off" class="modal-field" />
-                <svg class="icon modal-form-icon" width="18" height="18">
+                <input type="email" name="mail" autocomplete="off" class="modal-form__field" />
+                <svg class="icon modal-form__icon" width="18" height="18">
                   <use
                     href="./images/icons.svg#email"
                   ></use>
                 </svg>
               </label">
             </li>
-            <li class="modal-form-list">
+            <li class="modal-form__item">
               <label>
                 Комментарий  
                 <textarea
                   name="comment"
                   placeholder="Введите текст"
-                  class="modal-field modal-field-comment"
+                  class="modal-form__field modal-form__comment"
                 ></textarea>
               </label>
             </li>
           </ul>
-          <label class="modal-label-checkbox">
-    <input type="checkbox" name="sign" value="agreement" class="modal-checkbox"/>
-    <svg class="icon modal-form-icon-sign" width="16" height="15">
+          <label class="checkbox__label">
+    <input type="checkbox" name="sign" value="agreement" class="checkbox"/>
+    <svg class="icon checkbox__sign" width="16" height="15">
       <use href="./images/icons.svg#sign">
       </use>
     </svg>
-    <span class="modal-form-checkbox-custom"></span>
-    Соглашаюсь с рассылкой и принимаю <a href="" class="link modal-link-agreement">Условия договора</a> 
+    <span class="checkbox__custom"></span>
+    Соглашаюсь с рассылкой и принимаю <a href="" class="link modal__link-agreement">Условия договора</a> 
   </label>
         </form>
         <button type="submit" class="btn-accent">Отправить</button>
