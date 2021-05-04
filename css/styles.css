@@ -403,28 +403,22 @@ img {
   margin-left: -30px;
 }
 
-.cards-item {
+.cards__item {
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc((100% - 90px) / 3);
 }
 
 /* ---Наши преимущества--- */
-.advantages {
+.section-advantages {
   padding-bottom: 0px;
 }
 
-.advantages .cards-item {
+.section-advantages .cards__item {
   flex-basis: calc((100% - 120px) / 4);
 }
 
-.advantages-text {
-  margin-top: 10px;
-  font-size: 14px;
-  line-height: 1.71;
-}
-
-.advantages-cards-block {
+.section-advantages__cards-block {
   padding: 25px 0;
   margin-bottom: 30px;
   max-width: 270px;
@@ -432,12 +426,18 @@ img {
   background-color: var(--bg-btn-filtr);
 }
 
+.section-advantages__cards-text {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
 /* ---Чем мы занимаемся--- */
-.working .cards-item {
+.section-working__cards--position {
   position: relative;
 }
 
-.working-thumb {
+.section-working__thumb {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -448,7 +448,7 @@ img {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.working-thumb .studio-title-h3 {
+.section-working__studio-title-h3--color {
   color: #ffffff;
 }
 
@@ -457,7 +457,7 @@ img {
   background-color: #f5f4fa;
 }
 
-.team .cards-item {
+.team .cards__item {
   flex-basis: calc((100% - 120px) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -534,7 +534,7 @@ img {
 }
 
 /* ---Постоянные клиенты--- */
-.clients .cards-item {
+.clients .cards__item {
   flex-basis: calc((100% - 180px) / 6);
 }
 
@@ -603,7 +603,7 @@ img {
 }
 
 /* ---Содержание---- */
-.portfolio .cards-item {
+.portfolio .cards__item {
   transition: box-shadow var(--duration) var(--timing-function);
 }
 
