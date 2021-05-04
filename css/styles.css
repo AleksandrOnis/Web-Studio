@@ -248,9 +248,8 @@ img {
 .icon__telephone:focus .icon__telephone--accent {
   color: var(--accent-color);
 }
-}
 /* ---Контакты футер--- */
-.foot-contact {
+.footer-contact {
   display: flex;
   flex-direction: column;
   font-weight: 400;
@@ -258,7 +257,7 @@ img {
   color: rgba(255, 255, 255, 0, 6);
 }
 
-.foot-contact-item:not(:last-child) {
+.footer-contact__item:not(:last-child) {
   margin-bottom: 9px;
 }
 
@@ -267,17 +266,17 @@ img {
 }
 
 /* ---Футер--- */
-.foot {
+.page-footer {
   padding: 60px 0;
   background-color: var(--bg-secondary-color);
 }
 
-.foot .container {
+.page-footer .container {
   display: flex;
   align-items: baseline;
 }
 
-.foot-title {
+.page-footer__title {
   font-weight: bold;
   font-size: 14px;
   line-height: 16px;
@@ -285,37 +284,37 @@ img {
   color: #ffffff;
 }
 
-.foot .icon {
+.page-footer .icon {
   color: #ffffff;
 }
 
 /*  ---Блок присоединяйтесь--- */
-.foot-block-join {
+.page-footer__join {
   flex-basis: 206px;
   margin-left: 70px;
 }
 
-.foot .block-icons {
+.page-footer .social-links {
   margin-top: 20px;
 }
 
-.foot .social-link {
+.page-footer .social-links__item {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 }
 
 /*  ---Блок подпишитесь на рассылку--- */
-.subscribe-block {
+.page-footer__subscribe {
   flex-basis: 570px;
   margin-left: 93px;
 }
 
-.subscribe-form {
+.subscribe__form {
   position: relative;
   margin-top: 20px;
 }
 
-.subscribe-field {
+.subscribe__field {
   padding-left: 79px;
   width: 358px;
   height: 50px;
@@ -327,20 +326,20 @@ img {
   outline: none;
 }
 
-.subscribe-label {
+.subscribe__label {
   position: absolute;
   top: 0;
   left: 0;
   transform: translate(16px, 15px);
 }
 
-.subscribe-field-text {
+.subscribe__text {
   font-size: 16px;
   line-height: 1.25;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.icon-send {
+.icon__send--position {
   margin-left: 10px;
 }
 
