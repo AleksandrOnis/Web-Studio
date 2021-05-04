@@ -67,8 +67,6 @@ img {
   text-transform: uppercase;
 }
 
-.cap .link:hover,
-.cap .link:focus,
 .btn:focus,
 .btn:hover {
   color: var(--accent-color);
@@ -149,13 +147,13 @@ img {
 
 /* --------------------------------------------------------------------------------------------------- */
 /* ---Хедер и футер--- */
-/* ---Шапка--- */
+/* ---Хедер--- */
 .page-header {
   border: 1px solid #ececec;
   background-color: #ffffff;
 }
 
-.cap {
+.page-header__container {
   display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -205,52 +203,52 @@ img {
 }
 
 /* ---Общие классы для контактов--- */
-.contact {
+/* .contact {
   font-size: 14px;
-}
+} */
 
 /* ---Контакты шапка--- */
-.cap-contact {
+.contact {
   display: flex;
   margin-left: auto;
+  font-size: 14px;
   font-weight: 500;
   line-height: 1.17;
 }
 
-.cap-contact-item {
+.contact__item {
   display: flex;
   align-items: center;
 }
 
-.cap-contact-item:not(:last-child) {
+.contact__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact-link {
+.contact__link {
   display: flex;
   align-items: center;
 }
 
-.contact .icon {
+.contact__link:hover,
+.contact__link:focus {
+  color: var(--accent-color);
+}
+
+.contact__icon {
   color: #757575;
-}
-
-.icon-envelope {
   margin-right: 10px;
 }
 
-.icon-telephone {
-  margin-right: 10px;
-}
-
-.contact-envelope:hover .icon-envelope,
-.contact-envelope:focus .icon-envelope {
+.icon__envelope:hover .icon__envelope--accent,
+.icon__envelope:focus .icon__envelope--accent {
   color: var(--accent-color);
 }
 
-.contact-telephone:hover .icon-telephone,
-.contact-telephone:focus .icon-telephone {
+.icon__telephone:hover .icon__telephone--accent,
+.icon__telephone:focus .icon__telephone--accent {
   color: var(--accent-color);
+}
 }
 /* ---Контакты футер--- */
 .foot-contact {
