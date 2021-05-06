@@ -25,7 +25,7 @@ html {
 body {
   font-family: 'Roboto', 'arial', sans-serif;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: #757575;
 }
 
 h1,
@@ -56,8 +56,8 @@ img {
 .link {
   text-decoration: none;
   color: inherit;
-  -webkit-transition: color var(--duration) var(--timing-function);
-  transition: color var(--duration) var(--timing-function);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container {
@@ -72,7 +72,7 @@ img {
 
 .btn-common:focus,
 .btn-common:hover {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .btn-common {
@@ -83,12 +83,12 @@ img {
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
-  color: var(--title-text-color);
+  color: #212121;
   border: none;
   border-radius: 4px;
-  -webkit-transition: color var(--duration) var(--timing-function);
-  transition: color var(--duration) var(--timing-function);
-  background-color: var(--bg-btn-filtr);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #f5f4fa;
 }
 
 .btn-accent {
@@ -111,7 +111,7 @@ img {
   letter-spacing: 0.06em;
   cursor: pointer;
   color: #ffffff;
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: none;
@@ -120,7 +120,7 @@ img {
 
 .active-menu {
   position: relative;
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .active-menu::after {
@@ -130,7 +130,7 @@ img {
   content: '';
   width: 100%;
   height: 4px;
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   border-radius: 2px;
 }
 
@@ -142,8 +142,8 @@ img {
 .icon {
   fill: currentColor;
   color: #afb1b8;
-  -webkit-transition: color var(--duration) var(--timing-function);
-  transition: color var(--duration) var(--timing-function);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo {
@@ -155,7 +155,7 @@ img {
 }
 
 .logo--color {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .navigation {
@@ -166,7 +166,7 @@ img {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 .navigation__item--padding {
@@ -211,7 +211,7 @@ img {
 
 .contact__link:hover,
 .contact__link:focus {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .contact__icon {
@@ -221,12 +221,12 @@ img {
 
 .icon__envelope:hover .icon__envelope--accent,
 .icon__envelope:focus .icon__envelope--accent {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .icon__telephone:hover .icon__telephone--accent,
 .icon__telephone:focus .icon__telephone--accent {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .page-header {
@@ -311,7 +311,7 @@ img {
 
 .page-footer {
   padding: 60px 0;
-  background-color: var(--bg-secondary-color);
+  background-color: #2f303a;
 }
 
 .page-footer .container {
@@ -375,7 +375,7 @@ img {
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/banner.jpg");
   background-position: center;
   background-size: cover;
-  background-color: var(--bg-secondary-color);
+  background-color: #2f303a;
 }
 
 .banner__slogan {
@@ -398,13 +398,13 @@ img {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 .studio-title-h3 {
   font-size: 14px;
   line-height: 1.17;
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 .cards {
@@ -442,7 +442,7 @@ img {
   margin-bottom: 30px;
   max-width: 270px;
   text-align: center;
-  background-color: var(--bg-btn-filtr);
+  background-color: #f5f4fa;
 }
 
 .section-advantages__cards-text {
@@ -527,13 +527,13 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  -webkit-transition: background-color var(--duration) var(--timing-function);
-  transition: background-color var(--duration) var(--timing-function);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-links__link:hover,
 .social-links__link:focus {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   border-radius: 50%;
 }
 
@@ -558,18 +558,18 @@ img {
   padding: 16px 0;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  -webkit-transition: border-color var(--duration) var(--timing-function);
-  transition: border-color var(--duration) var(--timing-function);
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .section-clients__link:hover,
 .section-clients__link:focus {
-  border-color: var(--accent-color);
+  border-color: #2196f3;
 }
 
 .section-clients__link:hover .section-clients__icon,
 .section-clients__link:focus .section-clients__icon {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .backdrop {
@@ -579,10 +579,10 @@ img {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
-  -webkit-transition: opacity, visibility, 1000ms, 1000ms var(--timing-function), -webkit-transform 1000ms;
-  transition: opacity, visibility, 1000ms, 1000ms var(--timing-function), -webkit-transform 1000ms;
-  transition: opacity, visibility, transform 1000ms, 1000ms, 1000ms var(--timing-function);
-  transition: opacity, visibility, transform 1000ms, 1000ms, 1000ms var(--timing-function), -webkit-transform 1000ms;
+  -webkit-transition: opacity, visibility, 1000ms, 1000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 1000ms;
+  transition: opacity, visibility, 1000ms, 1000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 1000ms;
+  transition: opacity, visibility, transform 1000ms, 1000ms, 1000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity, visibility, transform 1000ms, 1000ms, 1000ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 1000ms;
 }
 
 .backdrop.is-hidden {
@@ -627,10 +627,10 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
-  -webkit-transition: -webkit-transform var(--duration) var(--timing-function);
-  transition: -webkit-transform var(--duration) var(--timing-function);
-  transition: transform var(--duration) var(--timing-function);
-  transition: transform var(--duration) var(--timing-function), -webkit-transform var(--duration) var(--timing-function);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 
@@ -640,7 +640,7 @@ img {
 
 .modal__btn:hover .icon__close,
 .modal__btn:focus .icon__close {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .modal__title {
@@ -649,7 +649,7 @@ img {
   font-size: 20px;
   line-height: 1.15;
   text-align: center;
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 .modal-form__list {
@@ -657,7 +657,7 @@ img {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: var(--primary-text-color);
+  color: #757575;
 }
 
 .modal-form__label--position {
@@ -674,19 +674,19 @@ img {
           box-sizing: border-box;
   border-radius: 4px;
   cursor: pointer;
-  -webkit-transition: -webkit-transform var(--duration) var(--timing-function);
-  transition: -webkit-transform var(--duration) var(--timing-function);
-  transition: transform var(--duration) var(--timing-function);
-  transition: transform var(--duration) var(--timing-function), -webkit-transform var(--duration) var(--timing-function);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   outline: none;
 }
 
 .modal-form__field:focus {
-  border: 1px solid var(--accent-color);
+  border: 1px solid #2196f3;
 }
 
 .modal-form__field:focus + .modal-form__icon {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .modal-form__item:not(:last-child) {
@@ -708,10 +708,10 @@ img {
   -webkit-transform: translate(12px, 2px);
           transform: translate(12px, 2px);
   color: #000000;
-  -webkit-transition: -webkit-transform var(--duration) var(--timing-function);
-  transition: -webkit-transform var(--duration) var(--timing-function);
-  transition: transform var(--duration) var(--timing-function);
-  transition: transform var(--duration) var(--timing-function), -webkit-transform var(--duration) var(--timing-function);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox__label {
@@ -747,7 +747,7 @@ img {
   width: 16px;
   height: 15px;
   background-color: #ffffff;
-  border: 2px solid var(--title-text-color);
+  border: 2px solid #212121;
   border-radius: 2px;
 }
 
@@ -757,13 +757,13 @@ img {
   left: 0;
   -webkit-transform: translate(0, -50%);
           transform: translate(0, -50%);
-  background: var(--accent-color);
+  background: #2196f3;
   border-radius: 2px;
   opacity: 0;
-  -webkit-transition: -webkit-transform var(--duration) var(--timing-function);
-  transition: -webkit-transform var(--duration) var(--timing-function);
-  transition: transform var(--duration) var(--timing-function);
-  transition: transform var(--duration) var(--timing-function), -webkit-transform var(--duration) var(--timing-function);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox:checked ~ .modal-form-checkbox-custom {
@@ -775,8 +775,8 @@ img {
 }
 
 .checkbox:focus ~ .checkbox__custom {
-  -webkit-box-shadow: 0 0 0 2px var(--accent-color);
-          box-shadow: 0 0 0 2px var(--accent-color);
+  -webkit-box-shadow: 0 0 0 2px #2196f3;
+          box-shadow: 0 0 0 2px #2196f3;
 }
 
 .checkbox:focus ~ .checkbox__sign {
@@ -786,20 +786,20 @@ img {
 
 .modal__link-agreement {
   text-decoration: underline;
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .modal .btn-accent {
   display: block;
   margin: 0 auto;
   margin-top: 30px;
-  background: var(--accent-color);
+  background: #2196f3;
   -webkit-box-shadow: none;
           box-shadow: none;
-  -webkit-transition: -webkit-transform var(--duration) var(--timing-function);
-  transition: -webkit-transform var(--duration) var(--timing-function);
-  transition: transform var(--duration) var(--timing-function);
-  transition: transform var(--duration) var(--timing-function), -webkit-transform var(--duration) var(--timing-function);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal .btn-accent:hover,
@@ -816,13 +816,13 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 .portfolio__category {
   font-size: 16px;
   line-height: 1.88;
-  color: var(--primary-text-color);
+  color: #757575;
 }
 
 .portfolio__content {
@@ -844,10 +844,10 @@ img {
 }
 
 .filtr__btn {
-  -webkit-transition: -webkit-box-shadow var(--duration) var(--timing-function);
-  transition: -webkit-box-shadow var(--duration) var(--timing-function);
-  transition: box-shadow var(--duration) var(--timing-function);
-  transition: box-shadow var(--duration) var(--timing-function), -webkit-box-shadow var(--duration) var(--timing-function);
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filtr__item:not(:last-child) {
@@ -862,10 +862,10 @@ img {
 
 /* ---Содержание---- */
 .section-portfolio .cards__item {
-  -webkit-transition: -webkit-box-shadow var(--duration) var(--timing-function);
-  transition: -webkit-box-shadow var(--duration) var(--timing-function);
-  transition: box-shadow var(--duration) var(--timing-function);
-  transition: box-shadow var(--duration) var(--timing-function), -webkit-box-shadow var(--duration) var(--timing-function);
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio__block-img {
@@ -877,10 +877,10 @@ img {
   position: absolute;
   top: 100%;
   left: 0;
-  -webkit-transition: -webkit-transform var(--duration) var(--timing-function);
-  transition: -webkit-transform var(--duration) var(--timing-function);
-  transition: transform var(--duration) var(--timing-function);
-  transition: transform var(--duration) var(--timing-function), -webkit-transform var(--duration) var(--timing-function);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 63px 24px;
   width: 100%;
   height: 100%;

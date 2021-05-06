@@ -22,7 +22,7 @@
 
 .contact__link:hover,
 .contact__link:focus {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .contact__icon {
@@ -32,10 +32,10 @@
 
 .icon__envelope:hover .icon__envelope--accent,
 .icon__envelope:focus .icon__envelope--accent {
-  color: var(--accent-color);
+  color: $accent-color;
 }
 
 .icon__telephone:hover .icon__telephone--accent,
 .icon__telephone:focus .icon__telephone--accent {
-  color: var(--accent-color);
+  color: $accent-color;
 }

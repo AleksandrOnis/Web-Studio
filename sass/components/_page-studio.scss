@@ -1,3 +1,4 @@
+@import '../utils/variables';
 .banner {
   display: flex;
   padding: 200px 0;
@@ -13,7 +14,7 @@
     url('../images/banner.jpg');
   background-position: center;
   background-size: cover;
-  background-color: var(--bg-secondary-color);
+  background-color: $bg-secondary-color;
 }
 
 .banner__slogan {
@@ -37,13 +38,13 @@
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 
 .studio-title-h3 {
   font-size: 14px;
   line-height: 1.17;
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 
 .cards {
@@ -74,7 +75,7 @@
   margin-bottom: 30px;
   max-width: 270px;
   text-align: center;
-  background-color: var(--bg-btn-filtr);
+  background-color: $bg-btn-filtr;
 }
 
 .section-advantages__cards-text {
@@ -150,12 +151,12 @@
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  transition: background-color var(--duration) var(--timing-function);
+  transition: background-color $duration $timing-function;
 }
 
 .social-links__link:hover,
 .social-links__link:focus {
-  background-color: var(--accent-color);
+  background-color: $accent-color;
   border-radius: 50%;
 }
 
@@ -175,15 +176,15 @@
   padding: 16px 0;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  transition: border-color var(--duration) var(--timing-function);
+  transition: border-color $duration $timing-function;
 }
 
 .section-clients__link:hover,
 .section-clients__link:focus {
-  border-color: var(--accent-color);
+  border-color: $accent-color;
 }
 
 .section-clients__link:hover .section-clients__icon,
 .section-clients__link:focus .section-clients__icon {
-  color: var(--accent-color);
+  color: $accent-color;
 }

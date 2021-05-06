@@ -4,13 +4,13 @@
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--title-text-color);
+  color: $title-text-color;
 }
 
 .portfolio__category {
   font-size: 16px;
   line-height: 1.88;
-  color: var(--primary-text-color);
+  color: $primary-text-color;
 }
 
 .portfolio__content {
@@ -28,7 +28,7 @@
 }
 
 .filtr__btn {
-  transition: box-shadow var(--duration) var(--timing-function);
+  transition: box-shadow $duration $timing-function;
 }
 
 .filtr__item:not(:last-child) {
@@ -43,7 +43,7 @@
 
 /* ---Содержание---- */
 .section-portfolio .cards__item {
-  transition: box-shadow var(--duration) var(--timing-function);
+  transition: box-shadow $duration $timing-function;
 }
 
 .portfolio__block-img {
@@ -55,7 +55,7 @@
   position: absolute;
   top: 100%;
   left: 0;
-  transition: transform var(--duration) var(--timing-function);
+  transition: transform $duration $timing-function;
   padding: 63px 24px;
   width: 100%;
   height: 100%;
