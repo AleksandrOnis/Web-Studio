@@ -1,13 +1,15 @@
 @import './utils/variables';
 @import './utils/vissualy-hidden';
+@import './utils/placeholders';
+@import './utils/mixins';
 @import './common/common-class';
 @import './common/logo';
 @import './common/header/navigation';
 @import './common/header/contact';
-@import './common/site-header';
+@import './common/header';
 @import './common/footer/join';
 @import './common/footer/subscribe';
-@import './common/site-footer';
+@import './common/footer';
 @import './components/page-studio';
 @import './components/modal';
 @import './components/page-portfolio';

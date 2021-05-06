@@ -22,8 +22,7 @@
 
 /* ---Фильтр---- */
 .filtr {
-  display: flex;
-  justify-content: center;
+  @include centered-flex();
   margin-bottom: 50px;
 }
 

@@ -1,8 +1,6 @@
-@import '../utils/variables';
 .banner {
-  display: flex;
+  @include centered-flex();
   padding: 200px 0;
-  margin: 0 auto;
   text-align: center;
   max-width: 1600px;
   height: 600px;
@@ -48,9 +46,8 @@
 }
 
 .cards {
-  display: flex;
+  @include centered-flex();
   flex-wrap: wrap;
-  justify-content: center;
   margin-top: -30px;
   margin-left: -30px;
 }
@@ -136,8 +133,7 @@
 }
 
 .social-links {
-  display: flex;
-  margin: 0 auto;
+  @include centered-flex();
 }
 
 .social-links__item:not(:last-child) {
@@ -145,9 +141,7 @@
 }
 
 .social-links__link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  @include centered-flex(inline-flex);
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -171,8 +165,7 @@
 }
 
 .section-clients__link {
-  display: flex;
-  justify-content: center;
+  @include centered-flex();
   padding: 16px 0;
   border: 1px solid #afb1b8;
   border-radius: 4px;

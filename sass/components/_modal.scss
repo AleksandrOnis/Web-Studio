@@ -31,12 +31,10 @@
 }
 
 .modal__btn {
+  @include centered-flex();
   position: absolute;
   top: 8px;
   right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 30px;
   height: 30px;
   background: #ffffff;
@@ -120,10 +118,9 @@
 }
 
 .checkbox__label {
-  position: relative;
-  display: flex;
+  @include centered-flex();
   margin: 0 auto;
-  align-items: center;
+  position: relative;
   width: fit-content;
   font-size: 14px;
   line-height: 1.71;
