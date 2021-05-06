@@ -1,0 +1,23 @@
+@import './utils/variables';
+@import './utils/vissualy-hidden';
+@import './components/common/common-class';
+@import './components/common/logo';
+@import './components/common/header/navigation';
+@import './components/common/header/contact';
+
+.page-header {
+  border: 1px solid #ececec;
+  background-color: #ffffff;
+}
+
+.page-header__container {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  align-items: center;
+}
+
+.page-header__logo {
+  margin-right: 93px;
+  color: #000000;
+}

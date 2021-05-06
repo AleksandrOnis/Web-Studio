@@ -1,0 +1,44 @@
+@import './utils/variables';
+@import './utils/vissualy-hidden';
+@import './components/common/common-class';
+.contact {
+  display: flex;
+  margin-left: auto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.17;
+}
+
+.contact__item {
+  display: flex;
+  align-items: center;
+}
+
+.contact__item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.contact__link {
+  display: flex;
+  align-items: center;
+}
+
+.contact__link:hover,
+.contact__link:focus {
+  color: var(--accent-color);
+}
+
+.contact__icon {
+  color: #757575;
+  margin-right: 10px;
+}
+
+.icon__envelope:hover .icon__envelope--accent,
+.icon__envelope:focus .icon__envelope--accent {
+  color: var(--accent-color);
+}
+
+.icon__telephone:hover .icon__telephone--accent,
+.icon__telephone:focus .icon__telephone--accent {
+  color: var(--accent-color);
+}

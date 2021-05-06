@@ -1,0 +1,19 @@
+@import './utils/variables';
+@import './utils/vissualy-hidden';
+@import './components/common/common-class';
+.navigation {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+}
+
+.navigation__item--padding {
+  padding: 28px 0;
+}
+
+.navigation__item:not(:last-child) {
+  margin-right: 50px;
+}

@@ -1,0 +1,43 @@
+.page-footer {
+  padding: 60px 0;
+  background-color: var(--bg-secondary-color);
+
+  .container {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .icon {
+    color: #ffffff;
+  }
+}
+
+.page-footer__title {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 1.14;
+  color: #ffffff;
+}
+
+.page-footer__logo {
+  display: block;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  font-weight: 400;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-contact__item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.contact-map {
+  color: #ffffff;
+}

@@ -1,0 +1,189 @@
+.banner {
+  display: flex;
+  padding: 200px 0;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/banner.jpg');
+  background-position: center;
+  background-size: cover;
+  background-color: var(--bg-secondary-color);
+}
+
+.banner__slogan {
+  max-width: 696px;
+  margin: 0 auto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+}
+
+.banner__btn-accent {
+  margin-top: 30px;
+}
+
+/* ---Общее для секций--- */
+
+.studio-title-h2 {
+  margin-bottom: 50px;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--title-text-color);
+}
+
+.studio-title-h3 {
+  font-size: 14px;
+  line-height: 1.17;
+  color: var(--title-text-color);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.cards__item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+}
+
+/* ---Наши преимущества--- */
+.section-advantages {
+  padding-bottom: 0px;
+}
+
+.section-advantages__cards--position {
+  flex-basis: calc((100% - 120px) / 4);
+}
+
+.section-advantages__cards--thumb {
+  padding: 25px 0;
+  margin-bottom: 30px;
+  max-width: 270px;
+  text-align: center;
+  background-color: var(--bg-btn-filtr);
+}
+
+.section-advantages__cards-text {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* ---Чем мы занимаемся--- */
+.cards__item--position {
+  position: relative;
+}
+
+.section-working__thumb {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 27px 0;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.section-working__studio-title-h3--color {
+  color: #ffffff;
+}
+
+/* ---Наша команда--- */
+.section-team {
+  background-color: #f5f4fa;
+}
+
+.section-team .cards__item {
+  flex-basis: calc((100% - 120px) / 4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background-color: #ffffff;
+}
+
+.section-team__title {
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.section-team__text {
+  margin-bottom: 16px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.section-team--content-position {
+  padding: 30px 32px;
+}
+
+.social-links {
+  display: flex;
+  margin: 0 auto;
+}
+
+.social-links__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-links__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color var(--duration) var(--timing-function);
+}
+
+.social-links__link:hover,
+.social-links__link:focus {
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.social-links__link:hover .section-team__icon,
+.social-links__link:focus .section-team__icon {
+  color: #ffffff;
+}
+
+/* ---Постоянные клиенты--- */
+.section-clients .cards__item {
+  flex-basis: calc((100% - 180px) / 6);
+}
+
+.section-clients__link {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border-color var(--duration) var(--timing-function);
+}
+
+.section-clients__link:hover,
+.section-clients__link:focus {
+  border-color: var(--accent-color);
+}
+
+.section-clients__link:hover .section-clients__icon,
+.section-clients__link:focus .section-clients__icon {
+  color: var(--accent-color);
+}

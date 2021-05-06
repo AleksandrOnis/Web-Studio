@@ -1,4 +1,4 @@
-:root {
+/* :root {
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   --duration: 250ms;
   --primary-text-color: #757575;
@@ -9,7 +9,7 @@
   --bg-btn-filtr: #f5f4fa;
 }
 
-html {
+/* html {
   box-sizing: border-box;
 }
 
@@ -44,7 +44,7 @@ img {
 
 /* Общие классы */
 
-.list {
+/* .list {
   padding-left: 0;
   margin: 0;
   list-style: none;
@@ -120,9 +120,9 @@ img {
   height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
-}
+} */
 
-.visually-hidden {
+/* .visually-hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
@@ -131,8 +131,8 @@ img {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
-}
-
+} */
+/* 
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -143,11 +143,12 @@ img {
   color: #afb1b8;
   transition: color var(--duration) var(--timing-function);
 }
+ */
 
 /* --------------------------------------------------------------------------------------------------- */
 /* ---Хедер и футер--- */
 /* ---Хедер--- */
-.page-header {
+/* .page-header {
   border: 1px solid #ececec;
   background-color: #ffffff;
 }
@@ -157,10 +158,10 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
   align-items: center;
-}
+} */
 
 /* ---Общие классы для лого--- */
-.logo {
+/* .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -170,10 +171,10 @@ img {
 
 .logo--color {
   color: var(--accent-color);
-}
+} */
 
 /* ---Лого--- */
-.page-header__logo {
+/* .page-header__logo {
   margin-right: 93px;
   color: #000000;
 }
@@ -182,10 +183,10 @@ img {
   display: block;
   margin-bottom: 20px;
   color: #ffffff;
-}
+} */
 
 /* ---Навигация--- */
-.navigation {
+/* .navigation {
   display: flex;
   font-weight: 500;
   font-size: 14px;
@@ -200,10 +201,10 @@ img {
 
 .navigation__item:not(:last-child) {
   margin-right: 50px;
-}
+} */
 
 /* ---Контакты шапка--- */
-.contact {
+/* .contact {
   display: flex;
   margin-left: auto;
   font-size: 14px;
@@ -243,9 +244,9 @@ img {
 .icon__telephone:hover .icon__telephone--accent,
 .icon__telephone:focus .icon__telephone--accent {
   color: var(--accent-color);
-}
+} */
 /* ---Контакты футер--- */
-.footer-contact {
+/* .footer-contact {
   display: flex;
   flex-direction: column;
   font-weight: 400;
@@ -259,10 +260,10 @@ img {
 
 .contact-map {
   color: #ffffff;
-}
+} */
 
 /* ---Футер--- */
-.page-footer {
+/* .page-footer {
   padding: 60px 0;
   background-color: var(--bg-secondary-color);
 }
@@ -282,10 +283,10 @@ img {
 
 .page-footer .icon {
   color: #ffffff;
-}
+} */
 
 /*  ---Блок присоединяйтесь--- */
-.page-footer__join {
+/* .page-footer__join {
   flex-basis: 206px;
   margin-left: 70px;
 }
@@ -297,9 +298,9 @@ img {
 .page-footer .social-links__item {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-}
+} */
 
-/*  ---Блок подпишитесь на рассылку--- */
+/* ---Блок подпишитесь на рассылку---
 .page-footer__subscribe {
   flex-basis: 570px;
   margin-left: 93px;
@@ -320,9 +321,9 @@ img {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   outline: none;
-}
+} */
 
-.subscribe__label {
+/* .subscribe__label {
   position: absolute;
   top: 0;
   left: 0;
@@ -337,7 +338,7 @@ img {
 
 .icon__send--position {
   margin-left: 10px;
-}
+} */
 
 /* ---------------------------------------------------------------------------------------------- */
 /* ---Страница студия--- */
@@ -679,9 +680,6 @@ img {
   text-align: center;
   color: var(--title-text-color);
 }
-/* .modal .list {
-  margin-bottom: 20px;
-} */
 
 .modal-form__list {
   margin-bottom: 20px;
