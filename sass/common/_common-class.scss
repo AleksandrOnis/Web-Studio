@@ -56,11 +56,6 @@ img {
   text-transform: uppercase;
 }
 
-.btn-common:focus,
-.btn-common:hover {
-  color: $accent-color;
-}
-
 .btn-common {
   padding: 6px 22px;
   min-height: 38px;
@@ -74,10 +69,16 @@ img {
   border-radius: 4px;
   transition: color $duration $timing-function;
   background-color: $bg-btn-filtr;
+
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
 }
 
 .btn-accent {
   @include centered-flex(inline-flex);
+
   padding: 10px 0;
   width: 200px;
   height: 50px;
@@ -118,4 +119,17 @@ img {
   fill: currentColor;
   color: #afb1b8;
   transition: color $duration $timing-function;
+}
+
+.cards {
+  @include centered-flex();
+  flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
+}
+
+.cards__item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 90px) / 3);
 }

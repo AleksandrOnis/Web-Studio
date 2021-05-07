@@ -13,9 +13,15 @@
   background-position: center;
   background-size: cover;
   background-color: $bg-secondary-color;
+
+  .btn-accent {
+    margin-top: 30px;
+  }
 }
 
-.banner__slogan {
+/* ---Общее для секций--- */
+
+.studio-title__h1 {
   max-width: 696px;
   margin: 0 auto;
   font-weight: 900;
@@ -25,13 +31,7 @@
   color: #ffffff;
 }
 
-.banner__btn-accent {
-  margin-top: 30px;
-}
-
-/* ---Общее для секций--- */
-
-.studio-title-h2 {
+.studio-title__h2 {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
@@ -39,35 +39,22 @@
   color: $title-text-color;
 }
 
-.studio-title-h3 {
+.studio-title__h3 {
   font-size: 14px;
   line-height: 1.17;
   color: $title-text-color;
 }
 
-.cards {
-  @include centered-flex();
-  flex-wrap: wrap;
-  margin-top: -30px;
-  margin-left: -30px;
-}
-
-.cards__item {
-  margin-top: 30px;
-  margin-left: 30px;
-  flex-basis: calc((100% - 90px) / 3);
-}
-
 /* ---Наши преимущества--- */
 .section-advantages {
   padding-bottom: 0px;
+
+  & .cards__item {
+    flex-basis: calc((100% - 120px) / 4);
+  }
 }
 
-.section-advantages__cards--position {
-  flex-basis: calc((100% - 120px) / 4);
-}
-
-.section-advantages__cards--thumb {
+.section-advantages__cards-thumb {
   padding: 25px 0;
   margin-bottom: 30px;
   max-width: 270px;
@@ -82,8 +69,10 @@
 }
 
 /* ---Чем мы занимаемся--- */
-.cards__item--position {
-  position: relative;
+.section-working {
+  & .cards__item {
+    position: relative;
+  }
 }
 
 .section-working__thumb {
@@ -97,28 +86,33 @@
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.section-working__studio-title-h3--color {
-  color: #ffffff;
-}
-
 /* ---Наша команда--- */
 .section-team {
   background-color: #f5f4fa;
+
+  .studio-title__h3 {
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  & .cards__item {
+    flex-basis: calc((100% - 120px) / 4);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    background-color: #ffffff;
+  }
+
+  .link:hover .icon,
+  .link:focus .icon {
+    color: #ffffff;
+  }
 }
 
-.section-team .cards__item {
-  flex-basis: calc((100% - 120px) / 4);
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  background-color: #ffffff;
-}
-
-.section-team__title {
-  margin-bottom: 10px;
-  text-align: center;
-  font-weight: 500;
-  font-size: 16px;
+.section-team__block-info {
+  padding: 30px 32px;
 }
 
 .section-team__text {
@@ -128,56 +122,49 @@
   line-height: 1.17;
 }
 
-.section-team--content-position {
-  padding: 30px 32px;
-}
-
 .social-links {
   @include centered-flex();
+
+  .link {
+    @include centered-flex(inline-flex);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    transition: background-color $duration $timing-function;
+
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      border-radius: 50%;
+    }
+  }
 }
 
 .social-links__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-links__link {
-  @include centered-flex(inline-flex);
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  transition: background-color $duration $timing-function;
-}
-
-.social-links__link:hover,
-.social-links__link:focus {
-  background-color: $accent-color;
-  border-radius: 50%;
-}
-
-.social-links__link:hover .section-team__icon,
-.social-links__link:focus .section-team__icon {
-  color: #ffffff;
-}
-
 /* ---Постоянные клиенты--- */
-.section-clients .cards__item {
-  flex-basis: calc((100% - 180px) / 6);
-}
+.section-clients {
+  .cards__item {
+    flex-basis: calc((100% - 180px) / 6);
+  }
 
-.section-clients__link {
-  @include centered-flex();
-  padding: 16px 0;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  transition: border-color $duration $timing-function;
-}
+  .link {
+    @include centered-flex();
+    padding: 16px 0;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    transition: border-color $duration $timing-function;
 
-.section-clients__link:hover,
-.section-clients__link:focus {
-  border-color: $accent-color;
-}
+    &:hover,
+    &:focus {
+      border-color: $accent-color;
+    }
+  }
 
-.section-clients__link:hover .section-clients__icon,
-.section-clients__link:focus .section-clients__icon {
-  color: $accent-color;
+  .link:hover .icon,
+  .link:focus .icon {
+    color: $accent-color;
+  }
 }

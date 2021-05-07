@@ -7,8 +7,10 @@
   color: $title-text-color;
 }
 
-.navigation__item--padding {
-  padding: 28px 0;
+.navigation__item {
+  .link {
+    padding: 28px 0;
+  }
 }
 
 .navigation__item:not(:last-child) {

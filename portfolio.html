@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Портфолио</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -15,7 +16,8 @@
       integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ=="
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/main.min.css">  </head>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
   <body>
     <header class="page-header">
       <div class="container page-header__container">
@@ -25,48 +27,28 @@
         <nav>
           <ul class="navigation list">
             <li class="navigation__item">
-              <a class="link navigation__item--padding" href="./index.html"
-                >Студия</a
-              >
+              <a class="link" href="./index.html">Студия</a>
             </li>
             <li class="navigation__item">
-              <a
-                class="link navigation__item--padding active-menu"
-                href="./portfolio.html"
-                >Портфолио</a
-              >
+              <a class="link active-menu" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="navigation__item">
-              <a class="link navigation__item--padding" href="">Контакты</a>
+              <a class="link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
         <ul class="list contact">
           <li class="contact__item">
-            <a
-              class="link contact__link icon__envelope"
-              href="mailto:info@devstudio.com"
-            >
-              <svg
-                class="icon contact__icon icon__envelope--accent"
-                width="16"
-                height="12"
-              >
+            <a class="link contact__link" href="mailto:info@devstudio.com">
+              <svg class="icon contact__icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
           <li class="contact__item">
-            <a
-              class="link contact__link icon__telephone"
-              href="tel:+380961111111"
-            >
-              <svg
-                class="icon contact__icon icon__telephone--accent"
-                width="10"
-                height="16"
-              >
+            <a class="link contact__link" href="tel:+380961111111">
+              <svg class="icon contact__icon" width="10" height="16">
                 <use href="./images/icons.svg#telephone"></use>
               </svg>
               +38 096 111 11 11
@@ -85,16 +67,24 @@
               <button class="btn-common filtr__btn" type="button">Все</button>
             </li>
             <li class="filtr__item">
-              <button class="btn-common filtr__btn" type="button">Веб-сайты</button>
+              <button class="btn-common filtr__btn" type="button">
+                Веб-сайты
+              </button>
             </li>
             <li class="filtr__item">
-              <button class="btn-common filtr__btn" type="button">Приложения</button>
+              <button class="btn-common filtr__btn" type="button">
+                Приложения
+              </button>
             </li>
             <li class="filtr__item">
-              <button class="btn-common filtr__btn" type="button">Дизайн</button>
+              <button class="btn-common filtr__btn" type="button">
+                Дизайн
+              </button>
             </li>
             <li class="filtr__item">
-              <button class="btn-common filtr__btn" type="button">Маркетинг</button>
+              <button class="btn-common filtr__btn" type="button">
+                Маркетинг
+              </button>
             </li>
           </ul>
           <!-- Содержимое -->
@@ -384,7 +374,7 @@
             </label>
             <button type="submit" class="btn-accent">
               Подписаться
-              <svg class="icon icon__send--position" width="24" height="24">
+              <svg class="icon" width="24" height="24">
                 <use href="./images/icons.svg#send"></use>
               </svg>
             </button>

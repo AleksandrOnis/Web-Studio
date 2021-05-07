@@ -16,24 +16,23 @@
 
 .contact__link {
   @include centered-flex();
-}
-
-.contact__link:hover,
-.contact__link:focus {
-  color: $accent-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .contact__icon {
   color: #757575;
   margin-right: 10px;
-}
 
-.icon__envelope:hover .icon__envelope--accent,
-.icon__envelope:focus .icon__envelope--accent {
-  color: $accent-color;
-}
+  .contact__link:hover &,
+  .contact__link:focus & {
+    color: $accent-color;
+  }
 
-.icon__telephone:hover .icon__telephone--accent,
-.icon__telephone:focus .icon__telephone--accent {
-  color: $accent-color;
+  .contact__link:hover &,
+  .contact__link:focus & {
+    color: $accent-color;
+  }
 }
