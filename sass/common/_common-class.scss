@@ -2,10 +2,11 @@ html {
   box-sizing: border-box;
 }
 
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
+* {
+  &::after,
+  &::before {
+    box-sizing: inherit;
+  }
 }
 
 body {
@@ -98,16 +99,17 @@ img {
 .active-menu {
   position: relative;
   color: $accent-color;
-}
-.active-menu::after {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  content: '';
-  width: 100%;
-  height: 4px;
-  background-color: $accent-color;
-  border-radius: 2px;
+
+  &::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+  }
 }
 
 .section {
