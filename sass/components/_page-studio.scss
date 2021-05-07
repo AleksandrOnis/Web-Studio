@@ -122,28 +122,6 @@
   line-height: 1.17;
 }
 
-.social-links {
-  @include centered-flex();
-
-  .link {
-    @include centered-flex(inline-flex);
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    transition: background-color $duration $timing-function;
-
-    &:hover,
-    &:focus {
-      background-color: $accent-color;
-      border-radius: 50%;
-    }
-  }
-}
-
-.social-links__item:not(:last-child) {
-  margin-right: 10px;
-}
-
 /* ---Постоянные клиенты--- */
 .section-clients {
   .cards__item {
