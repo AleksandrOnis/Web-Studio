@@ -53,30 +53,6 @@ img {
   padding: 0 15px;
 }
 
-.upper-case {
-  text-transform: uppercase;
-}
-
-.btn-common {
-  padding: 6px 22px;
-  min-height: 38px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-  cursor: pointer;
-  color: $title-text-color;
-  border: none;
-  border-radius: 4px;
-  transition: color $duration $timing-function;
-  background-color: $bg-btn-filtr;
-
-  &:focus,
-  &:hover {
-    color: $accent-color;
-  }
-}
-
 .btn-accent {
   @include centered-flex(inline-flex);
 
@@ -129,7 +105,7 @@ img {
   margin-left: -30px;
 }
 
-.cards__item {
+.cards__list {
   margin-top: 30px;
   margin-left: 30px;
   flex-basis: calc((100% - 90px) / 3);
@@ -153,6 +129,6 @@ img {
   }
 }
 
-.social-links__item:not(:last-child) {
+.social-links__list:not(:last-child) {
   margin-right: 10px;
 }

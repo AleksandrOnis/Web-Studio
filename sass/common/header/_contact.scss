@@ -6,11 +6,11 @@
   line-height: 1.17;
 }
 
-.contact__item {
+.contact__list{
   @include centered-flex();
 }
 
-.contact__item:not(:last-child) {
+.contact__list:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -23,7 +23,6 @@
 }
 
 .contact__icon {
-
   margin-right: 10px;
 
   .contact__link:hover &,
