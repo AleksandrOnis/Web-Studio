@@ -64,7 +64,7 @@ img {
   padding: 0 15px;
 }
 
-.btn-accent {
+.btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -599,7 +599,7 @@ img {
   border-radius: 4px;
 }
 
-.modal .btn-accent {
+.modal .btn {
   display: block;
   margin: 0 auto;
   margin-top: 30px;
@@ -612,8 +612,8 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal .btn-accent:hover,
-.modal .btn-accent:focus {
+.modal .btn:hover,
+.modal .btn:focus {
   background: #188ce8;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
