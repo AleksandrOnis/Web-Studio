@@ -2,9 +2,20 @@
   padding: 60px 0;
   background-color: $bg-secondary-color;
 
-  .container {
+  &__container {
+    @extend %container;
     display: flex;
     align-items: baseline;
+  }
+
+  &__logo {
+    @extend %logo;
+    display: inline-block;
+    margin-bottom: 20px;
+
+    &--color {
+      color: #ffffff;
+    }
   }
 
   .icon {
@@ -18,12 +29,6 @@
   line-height: 16px;
   letter-spacing: 1.14;
   text-transform: uppercase;
-  color: #ffffff;
-}
-
-.page-footer__logo {
-  display: block;
-  margin-bottom: 20px;
   color: #ffffff;
 }
 

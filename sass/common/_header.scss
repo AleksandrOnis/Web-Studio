@@ -1,21 +1,21 @@
 .page-header {
   border: 1px solid #ececec;
   background-color: #ffffff;
-}
 
-.page-header__container {
-  @extend %container;
-  display: flex;
-  padding-top: 24px;
-  padding-bottom: 24px;
-  align-items: center;
-}
+  &__container {
+    @extend %container;
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    align-items: center;
+  }
 
-.page-header__logo {
-  @extend %logo;
-  margin-right: 93px;
+  &__logo {
+    @extend %logo;
+    margin-right: 93px;
 
-  &--color {
-    color: #000000;
+    &--color {
+      color: #000000;
+    }
   }
 }
