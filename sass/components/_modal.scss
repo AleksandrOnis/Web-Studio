@@ -29,7 +29,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  .btn-accent {
+  .btn {
     display: block;
     margin: 0 auto;
     margin-top: 30px;
@@ -38,8 +38,8 @@
     transition: transform $duration $timing-function;
   }
 
-  .btn-accent:hover,
-  .btn-accent:focus {
+  .btn:hover,
+  .btn:focus {
     background: #188ce8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     outline: none;
@@ -120,7 +120,7 @@
   }
 }
 
-.modal-form__item:not(:last-child) {
+.modal-form__list:not(:last-child) {
   margin-bottom: 10px;
 }
 

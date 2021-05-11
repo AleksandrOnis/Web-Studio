@@ -17,6 +17,7 @@
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 1.14;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
@@ -34,10 +35,10 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-contact__item:not(:last-child) {
+.footer-contact__list:not(:last-child) {
   margin-bottom: 9px;
 }
 
-.contact-map {
+.footer-contact__map {
   color: #ffffff;
 }
