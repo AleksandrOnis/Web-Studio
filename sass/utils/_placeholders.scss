@@ -4,6 +4,19 @@
   padding: 0 15px;
 }
 
+%list {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+}
+
+%link {
+  text-decoration: none;
+  color: inherit;
+  transition: color $duration $timing-function;
+}
+
 %logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
