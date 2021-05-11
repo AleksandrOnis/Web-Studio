@@ -19,6 +19,10 @@
   }
 }
 
+.banner__container {
+  @extend %container;
+}
+
 /* ---Общее для секций--- */
 
 .title__h1 {
@@ -30,7 +34,6 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #ffffff;
-
 }
 
 .title__h2 {
@@ -51,11 +54,15 @@
 
 /* ---Наши преимущества--- */
 .advantages {
-  padding-bottom: 0px;
+  padding-top: 94px;
 
   & .cards__list {
     flex-basis: calc((100% - 120px) / 4);
   }
+}
+
+.advantages__container {
+  @extend %container;
 }
 
 .advantages__thumb {
@@ -74,9 +81,14 @@
 
 /* ---Чем мы занимаемся--- */
 .working {
+  @extend %section;
   & .cards__list {
     position: relative;
   }
+}
+
+.working__container {
+  @extend %container;
 }
 
 .working__thumb {
@@ -93,6 +105,7 @@
 
 /* ---Наша команда--- */
 .team {
+  @extend %section;
   background-color: #f5f4fa;
 
   .title__h3 {
@@ -110,10 +123,14 @@
     background-color: #ffffff;
   }
 
-  .link:hover .icon,
-  .link:focus .icon {
+  .social-links__link:hover .social-links__icon,
+  .social-links__link:focus .social-links__icon {
     color: #ffffff;
   }
+}
+
+.team__container {
+  @extend %container;
 }
 
 .team__thumb {
@@ -129,6 +146,7 @@
 
 /* ---Постоянные клиенты--- */
 .clients {
+  @extend %section;
   .cards__list {
     flex-basis: calc((100% - 180px) / 6);
   }
@@ -150,4 +168,8 @@
   .link:focus .icon {
     color: $accent-color;
   }
+}
+
+.clients__container {
+  @extend %container;
 }

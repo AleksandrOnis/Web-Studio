@@ -1,24 +1,19 @@
 .page-footer {
   padding: 60px 0;
   background-color: $bg-secondary-color;
+}
+.page-footer__container {
+  @extend %container;
+  display: flex;
+  align-items: baseline;
+}
 
-  &__container {
-    @extend %container;
-    display: flex;
-    align-items: baseline;
-  }
+.page-footer__logo {
+  @extend %logo;
+  display: inline-block;
+  margin-bottom: 20px;
 
-  &__logo {
-    @extend %logo;
-    display: inline-block;
-    margin-bottom: 20px;
-
-    &--color {
-      color: #ffffff;
-    }
-  }
-
-  .icon {
+  &--color {
     color: #ffffff;
   }
 }
@@ -32,7 +27,8 @@
   color: #ffffff;
 }
 
-.footer-contact {
+.footer-contact__list {
+  @extend %list;
   display: flex;
   flex-direction: column;
   font-weight: 400;
@@ -40,8 +36,12 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-contact__list:not(:last-child) {
+.footer-contact__item:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.footer-contact__link {
+  @extend %link;
 }
 
 .footer-contact__map {

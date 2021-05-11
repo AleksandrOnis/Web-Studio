@@ -28,25 +28,26 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+}
 
-  .btn {
-    display: block;
-    margin: 0 auto;
-    margin-top: 30px;
-    background: $accent-color;
-    box-shadow: none;
-    transition: transform $duration $timing-function;
-  }
+.modal__btn {
+  @extend %btn;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  background: $accent-color;
+  box-shadow: none;
+  transition: transform $duration $timing-function;
 
-  .btn:hover,
-  .btn:focus {
+  &:hover,
+  &:focus {
     background: #188ce8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     outline: none;
   }
 }
 
-.modal__btn {
+.modal__btn-close {
   @include centered-flex();
   position: absolute;
   top: 8px;
@@ -61,10 +62,11 @@
   outline: none;
 }
 
-.icon__close {
+.modal__icon-close {
+  @extend %icon;
   color: #000000;
-  .modal__btn:hover &,
-  .modal__btn:focus & {
+  .modal__btn-close:hover &,
+  .modal__btn-close:focus & {
     color: $accent-color;
   }
 }
@@ -79,6 +81,10 @@
 }
 
 .modal-form__list {
+  @extend %list;
+}
+
+.modal-form__item {
   margin-bottom: 20px;
   font-size: 12px;
   line-height: 1.17;
@@ -88,15 +94,16 @@
 
 .modal-form__label {
   position: relative;
+}
 
-  .icon {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    transform: translate(12px, 2px);
-    color: #000000;
-    transition: transform $duration $timing-function;
-  }
+.modal-form__icon {
+  @extend %icon;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translate(12px, 2px);
+  color: #000000;
+  transition: transform $duration $timing-function;
 }
 
 .modal-form__field {
@@ -115,12 +122,12 @@
     border: 1px solid $accent-color;
   }
 
-  &:focus ~ .icon {
+  &:focus ~ .modal-form__icon {
     color: $accent-color;
   }
 }
 
-.modal-form__list:not(:last-child) {
+.modal-form__item:not(:last-child) {
   margin-bottom: 10px;
 }
 
@@ -132,21 +139,6 @@
   letter-spacing: 0.01em;
 }
 
-.checkbox__label {
-  @include centered-flex();
-  margin: 0 auto;
-  position: relative;
-  width: fit-content;
-  font-size: 14px;
-  line-height: 1.71;
-  cursor: pointer;
-
-  .link {
-    text-decoration: underline;
-    color: $accent-color;
-  }
-}
-
 .checkbox {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -156,6 +148,22 @@
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+.checkbox__label {
+  @include centered-flex();
+  margin: 0 auto;
+  position: relative;
+  width: fit-content;
+  font-size: 14px;
+  line-height: 1.71;
+  cursor: pointer;
+}
+
+.checkbox__link {
+  @extend %link;
+  text-decoration: underline;
+  color: $accent-color;
 }
 
 .checkbox__custom {

@@ -1,3 +1,10 @@
+@import './mixins';
+
+%section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 %container {
   width: 1200px;
   margin: 0 auto;
@@ -17,6 +24,11 @@
   transition: color $duration $timing-function;
 }
 
+%icon {
+  fill: currentColor;
+  transition: color $duration $timing-function;
+}
+
 %logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -24,4 +36,22 @@
   line-height: 1.17;
   text-decoration: none;
   color: $accent-color;
+}
+
+%btn {
+  @include centered-flex(inline-flex);
+  padding: 10px 0;
+  width: 200px;
+  height: 50px;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: #ffffff;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
 }
