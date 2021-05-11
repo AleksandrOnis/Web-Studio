@@ -8,7 +8,12 @@
   align-items: baseline;
 }
 
-.page-footer__logo {
+.page-footer__footer-contact {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.footer-contact__logo {
   @extend %logo;
   display: inline-block;
   margin-bottom: 20px;
