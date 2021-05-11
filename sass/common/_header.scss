@@ -4,6 +4,7 @@
 }
 
 .page-header__container {
+  @extend %container;
   display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -11,6 +12,10 @@
 }
 
 .page-header__logo {
+  @extend %logo;
   margin-right: 93px;
-  color: #000000;
+
+  &--color {
+    color: #000000;
+  }
 }

@@ -47,12 +47,6 @@ img {
   transition: color $duration $timing-function;
 }
 
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 .btn {
   @include centered-flex(inline-flex);
 
