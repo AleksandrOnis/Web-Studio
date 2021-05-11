@@ -27,6 +27,7 @@
 
 .contact__icon {
   @extend %icon;
+  color: #757575;
   margin-right: 10px;
 
   .contact__link:hover &,

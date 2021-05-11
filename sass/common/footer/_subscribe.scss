@@ -38,3 +38,7 @@
   @extend %icon;
   margin-left: 10px;
 }
+
+.subscribe__btn-submit {
+  @extend %btn;
+}

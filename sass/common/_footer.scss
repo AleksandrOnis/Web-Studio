@@ -45,5 +45,6 @@
 }
 
 .footer-contact__map {
+  @extend %link;
   color: #ffffff;
 }
