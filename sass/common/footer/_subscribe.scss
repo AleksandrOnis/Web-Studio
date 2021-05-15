@@ -1,14 +1,12 @@
-/*  ---Блок подпишитесь на рассылку--- */
-.page-footer__subscribe {
-  flex-basis: 570px;
-  margin-left: 93px;
-}
+// .page-footer__subscribe {
+//   flex-basis: 570px;
+//   margin-left: 93px;
+// }
 
 .subscribe__form {
   position: relative;
   display: inline-flex;
-  justify-content: right;
-  margin-top: 20px;
+  flex-direction: column;
 }
 
 .subscribe__name-field {
@@ -25,8 +23,9 @@
 }
 
 .subscribe__field {
+  margin-bottom: 20px;
   padding-left: 79px;
-  width: 358px;
+  width: 450px;
   height: 50px;
   background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -42,4 +41,55 @@
 
 .subscribe__btn-submit {
   @extend %btn;
+  margin: 0 auto;
 }
+
+
+
+
+
+
+// .page-footer__subscribe {
+//   flex-basis: 570px;
+//   margin-left: 93px;
+// }
+
+// .subscribe__form {
+//   position: relative;
+//   display: inline-flex;
+//   justify-content: right;
+//   margin-top: 20px;
+// }
+
+// .subscribe__name-field {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   transform: translate(16px, 15px);
+// }
+
+// .subscribe__text {
+//   font-size: 16px;
+//   line-height: 1.25;
+//   color: rgba(255, 255, 255, 0.6);
+// }
+
+// .subscribe__field {
+//   padding-left: 79px;
+//   width: 358px;
+//   height: 50px;
+//   background: transparent;
+//   border: 1px solid rgba(255, 255, 255, 0.3);
+//   box-sizing: border-box;
+//   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+//   border-radius: 4px;
+//   outline: none;
+// }
+
+// .subscribe__icon {
+//   margin-left: 10px;
+// }
+
+// .subscribe__btn-submit {
+//   @extend %btn;
+// }

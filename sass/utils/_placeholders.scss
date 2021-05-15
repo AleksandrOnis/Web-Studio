@@ -5,11 +5,6 @@
   padding-bottom: 94px;
 }
 
-%container {
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
 %btn {
   @include centered-flex(inline-flex);
   display: inline-flex;

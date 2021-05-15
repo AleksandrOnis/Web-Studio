@@ -52,6 +52,20 @@ img {
   transition: color $duration $timing-function;
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: $tablet;
+
+  @media screen and (max-width: ($tablet - 1px)) {
+    width: $mobile;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+  }
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
