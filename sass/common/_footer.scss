@@ -41,6 +41,20 @@
   color: #ffffff;
 }
 
+@media screen and (min-width: $tablet) {
+  .page-footer__container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  .page-footer__footer-contact {
+    margin-left: 76px;
+  }
+  
+}
+
+
+
 // .footer-contact__list {
 //   display: flex;
 //   flex-direction: column;

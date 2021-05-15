@@ -347,6 +347,12 @@ img {
   color: #ffffff;
 }
 
+@media screen and (min-width: 768px) {
+  .page-footer__join {
+    margin-left: 165px;
+  }
+}
+
 .subscribe__form {
   position: relative;
   display: inline-flex;
@@ -385,6 +391,12 @@ img {
 
 .subscribe__btn-submit {
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer__subscribe {
+    margin: 0 auto;
+  }
 }
 
 .page-footer {
@@ -429,6 +441,17 @@ img {
   line-height: 1.14;
   text-transform: uppercase;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .page-footer__container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+  .page-footer__footer-contact {
+    margin-left: 76px;
+  }
 }
 
 .banner {

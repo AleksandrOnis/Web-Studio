@@ -16,7 +16,11 @@
   }
 }
 
-
+@media screen and (min-width: $tablet) {
+  .page-footer__join {
+    margin-left: 165px;
+  }
+}
 
 
 

@@ -45,7 +45,11 @@
 }
 
 
-
+@media screen and (min-width: $tablet) {
+  .page-footer__subscribe {
+    margin: 0 auto;
+  }
+}
 
 
 
