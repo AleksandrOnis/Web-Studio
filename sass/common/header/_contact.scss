@@ -1,42 +1,70 @@
-.contact__list {
-  @extend %list;
-  display: flex;
-  margin-left: auto;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.17;
-}
+@media screen and (min-width: $tablet) {
+  
+  .contact__list {
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
 
-.contact__item {
-  @include centered-flex();
+  .contact__item {
+    @include centered-flex();
+    justify-content: start;
+  }
 
-  &:not(:last-child) {
-    margin-right: 50px;
+  .contact__link {
+    @include centered-flex();
+    
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
+  }
+
+  .contact__icon {
+    color: #757575;
+    margin-right: 8px;
+
+    .contact__link:hover &,
+    .contact__link:focus & {
+      color: $accent-color;
+    }
+
+    .contact__link:hover &,
+    .contact__link:focus & {
+      color: $accent-color;
+    }
   }
 }
 
-.contact__link {
-  @extend %link;
-  @include centered-flex();
 
-  &:hover,
-  &:focus {
-    color: $accent-color;
+@media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
+  
+  .contact__list {
+    flex-direction: column;
+  }
+
+  .contact__item {
+      &:not(:first-child) {
+      margin-top: 10px;
+    }
   }
 }
 
-.contact__icon {
-  @extend %icon;
-  color: #757575;
-  margin-right: 10px;
-
-  .contact__link:hover &,
-  .contact__link:focus & {
-    color: $accent-color;
+@media screen and (min-width: $desktop) {
+  
+  .contact__list {
+    margin-left: auto;
   }
 
-  .contact__link:hover &,
-  .contact__link:focus & {
-    color: $accent-color;
+  .contact__item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  .contact__icon {
+    margin-right: 10px;
   }
 }

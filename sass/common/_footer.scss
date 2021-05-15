@@ -14,7 +14,6 @@
 }
 
 .footer-contact__logo {
-  @extend %logo;
   display: inline-block;
   margin-bottom: 20px;
 
@@ -35,7 +34,6 @@
 }
 
 .footer-contact__list {
-  @extend %list;
   display: flex;
   flex-direction: column;
   font-weight: 400;
@@ -48,10 +46,8 @@
 }
 
 .footer-contact__link {
-  @extend %link;
 }
 
 .footer-contact__map {
-  @extend %link;
   color: #ffffff;
 }

@@ -1,24 +1,38 @@
 .banner {
   display: flex;
-  padding: 200px 0;
   margin: 0 auto;
   text-align: center;
-  max-width: 1600px;
-  height: 600px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('../images/banner.jpg');
+    url('/images/banner-mobile.jpg');
   background-position: center;
   background-size: cover;
   background-color: var(--bg-secondary-color);
+
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+    .banner {
+      background-image: 
+      url('/images/banner-mobile@2x.jpg');
+    }
+  }
+}
+
+.banner__container {
+  padding: 118px 0;
+  width: 480px;
+  height: 400px;
+
 }
 
 .banner__container {
   @extend %container;
 }
+
 
 .banner__title {
   @extend %title-h1;
@@ -29,168 +43,195 @@
   margin-top: 30px;
 }
 
-/* ---Наши преимущества--- */
-.advantages {
-  padding-top: 94px;
-}
 
-.advantages__container {
-  @extend %container;
-}
+// .banner {
+//   display: flex;
+//   padding: 200px 0;
+//   margin: 0 auto;
+//   text-align: center;
+//   max-width: 1600px;
+//   height: 600px;
+//   background-image: linear-gradient(
+//       to right,
+//       rgba(47, 48, 58, 0.4),
+//       rgba(47, 48, 58, 0.4)
+//     ),
+//     url('../images/banner.jpg');
+//   background-position: center;
+//   background-size: cover;
+//   background-color: var(--bg-secondary-color);
+// }
 
-.advantages__title {
-  @extend %title-h2;
-}
+// .banner__container {
+//   @extend %container;
+// }
 
-.advantages__list {
-  @extend %list;
-  @extend %cards__list;
-}
+// .banner__title {
+//   @extend %title-h1;
+// }
 
-.advantages__item {
-  @include cards__item(calc((100% - 120px) / 4));
-}
+// .banner__btn-order {
+//   @extend %btn;
+//   margin-top: 30px;
+// }
 
-.advantages__thumb {
-  padding: 25px 0;
-  margin-bottom: 30px;
-  max-width: 270px;
-  text-align: center;
-  background-color: $bg-btn-filtr;
-}
+// /* ---Наши преимущества--- */
+// .advantages {
+//   padding-top: 94px;
+// }
 
-.advantages__caption {
-  @extend %title-h3;
-}
+// .advantages__container {
+//   @extend %container;
+// }
 
-.advantages__text {
-  margin-top: 10px;
-  font-size: 14px;
-  line-height: 1.71;
-}
+// .advantages__title {
+//   @extend %title-h2;
+// }
 
-/* ---Чем мы занимаемся--- */
-.working {
-  @extend %section;
-}
+// .advantages__list {
+//   @extend %cards__list;
+// }
 
-.working__container {
-  @extend %container;
-}
+// .advantages__item {
+//   @include cards__item(calc((100% - 120px) / 4));
+// }
 
-.working__title {
-  @extend %title-h2;
-}
+// .advantages__thumb {
+//   padding: 25px 0;
+//   margin-bottom: 30px;
+//   max-width: 270px;
+//   text-align: center;
+//   background-color: $bg-btn-filtr;
+// }
 
-.working__list {
-  @extend %list;
-  @extend %cards__list;
-}
+// .advantages__caption {
+//   @extend %title-h3;
+// }
 
-.working__item {
-  @include cards__item();
-  position: relative;
-}
+// .advantages__text {
+//   margin-top: 10px;
+//   font-size: 14px;
+//   line-height: 1.71;
+// }
 
-.working__thumb {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  padding: 27px 0;
-  width: 100%;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: rgba(47, 48, 58, 0.8);
-}
+// /* ---Чем мы занимаемся--- */
+// .working {
+//   @extend %section;
+// }
 
-/* ---Наша команда--- */
-.team {
-  @extend %section;
-  background-color: #f5f4fa;
+// .working__container {
+//   @extend %container;
+// }
 
-  .social-links__link:hover .social-links__icon,
-  .social-links__link:focus .social-links__icon {
-    color: #ffffff;
-  }
-}
+// .working__title {
+//   @extend %title-h2;
+// }
 
-.team__container {
-  @extend %container;
-}
+// .working__list {
+//   @extend %cards__list;
+// }
 
-.team__title {
-  @extend %title-h2;
-}
+// .working__item {
+//   @include cards__item();
+//   position: relative;
+// }
 
-.team__list {
-  @extend %list;
-  @extend %cards__list;
-}
+// .working__thumb {
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   padding: 27px 0;
+//   width: 100%;
+//   text-align: center;
+//   text-transform: uppercase;
+//   color: #ffffff;
+//   background-color: rgba(47, 48, 58, 0.8);
+// }
 
-.team__item {
-  @include cards__item(calc((100% - 120px) / 4));
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  background-color: #ffffff;
-}
+// /* ---Наша команда--- */
+// .team {
+//   @extend %section;
+//   background-color: #f5f4fa;
 
-.team__thumb {
-  padding: 30px 32px;
-}
+//   .social-links__link:hover .social-links__icon,
+//   .social-links__link:focus .social-links__icon {
+//     color: #ffffff;
+//   }
+// }
 
-.team__name {
-  @extend %title-h3;
-  text-align: center;
-}
+// .team__container {
+//   @extend %container;
+// }
 
-.team__text {
-  margin-bottom: 16px;
-  text-align: center;
-  font-size: 16px;
-  line-height: 1.17;
-}
+// .team__title {
+//   @extend %title-h2;
+// }
 
-/* ---Постоянные клиенты--- */
-.clients {
-  @extend %section;
-}
+// .team__list {
+//   @extend %cards__list;
+// }
 
-.clients__container {
-  @extend %container;
-}
+// .team__item {
+//   @include cards__item(calc((100% - 120px) / 4));
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+//   border-radius: 0px 0px 4px 4px;
+//   background-color: #ffffff;
+// }
 
-.clients__title {
-  @extend %title-h2;
-}
+// .team__thumb {
+//   padding: 30px 32px;
+// }
 
-.clients__list {
-  @extend %list;
-  @extend %cards__list;
-}
+// .team__name {
+//   @extend %title-h3;
+//   text-align: center;
+// }
 
-.clients__item {
-  @include cards__item(calc((100% - 180px) / 6));
-}
+// .team__text {
+//   margin-bottom: 16px;
+//   text-align: center;
+//   font-size: 16px;
+//   line-height: 1.17;
+// }
 
-.clients__link {
-  @include centered-flex();
-  padding: 16px 0;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
-  transition: border-color $duration $timing-function;
+// /* ---Постоянные клиенты--- */
+// .clients {
+//   @extend %section;
+// }
 
-  &:hover,
-  &:focus {
-    border-color: $accent-color;
-  }
-}
+// .clients__container {
+//   @extend %container;
+// }
 
-.clients__icon {
-  @extend %icon;
-  .clients__link:hover &,
-  .clients__link:focus & {
-    color: $accent-color;
-  }
-}
+// .clients__title {
+//   @extend %title-h2;
+// }
+
+// .clients__list {
+//   @extend %cards__list;
+// }
+
+// .clients__item {
+//   @include cards__item(calc((100% - 180px) / 6));
+// }
+
+// .clients__link {
+//   @include centered-flex();
+//   padding: 16px 0;
+//   border: 1px solid #afb1b8;
+//   border-radius: 4px;
+//   transition: border-color $duration $timing-function;
+
+//   &:hover,
+//   &:focus {
+//     border-color: $accent-color;
+//   }
+// }
+
+// .clients__icon {
+//   .clients__link:hover &,
+//   .clients__link:focus & {
+//     color: $accent-color;
+//   }
+// }

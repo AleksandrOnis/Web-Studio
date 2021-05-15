@@ -6,14 +6,14 @@
 .page-header__container {
   @extend %container;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding-top: 16px;
   padding-bottom: 16px;
+  width: $mobile;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .page-header__logo {
-  @extend %logo;
   
   &--color {
     color: #000000;
@@ -21,10 +21,8 @@
 }
 
 @media screen and (max-width: ($tablet - 1px)) {
+  
   .page-header__btn-menu {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
     padding: 0;
     background: #ffffff;
     cursor: pointer;
@@ -34,7 +32,6 @@
   }
 
   .page-header__icon-menu {
-    fill: currentColor;
     color: $title-text-color;
     transition: color $duration $timing-function;
     
@@ -57,16 +54,12 @@
   }
 }
 
-@media screen and (min-width: $mobile) {
-
-  .page-header__container {
-    width: $mobile;
-  }
-}
-
 @media screen and (min-width: $tablet) {
+  
   .page-header__container {
     width: $tablet;
+    padding-top: 21px;
+    padding-bottom: 21px;
   }
   .page-header__btn-menu,
   .page-header__icon-menu {
@@ -81,30 +74,20 @@
   }
 }
 
-@media screen and (min-width: $desktop) {
-  .page-header__container {
-    width: $desktop;
-  }
+@media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
+  
 }
 
-// .page-header {
-//   border: 1px solid #red;
-//   background-color: #ffffff;
-// }
+@media screen and (min-width: $desktop) {
+  
+  .page-header__container {
+    width: $desktop;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 
-// .page-header__container {
-//   @extend %container;
-//   display: flex;
-//   padding-top: 24px;
-//   padding-bottom: 24px;
-//   align-items: center;
-// }
-
-// .page-header__logo {
-//   @extend %logo;
-//   margin-right: 93px;
-
-//   &--color {
-//     color: #000000;
-//   }
-// }
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}

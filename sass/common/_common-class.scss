@@ -33,9 +33,36 @@ img {
 }
 
 /* Общие классы */
+.list {
+  padding-left: 0;
+  margin: 0;
+  list-style: none;
+  font-style: normal;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+  transition: color $duration $timing-function;
+}
+
+.icon {
+  fill: currentColor;
+  color: #afb1b8;
+  transition: color $duration $timing-function;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  text-decoration: none;
+  color: $accent-color;
+}
+
 .social-links__list {
   @include centered-flex();
-  @extend %list;
 }
 
 .social-links__item:not(:last-child) {
@@ -44,7 +71,6 @@ img {
 
 .social-links__link {
   @include centered-flex(inline-flex);
-  @extend %link;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -57,6 +83,3 @@ img {
   }
 }
 
-.social-links__icon {
-  @extend %icon;
-}

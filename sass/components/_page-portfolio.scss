@@ -31,7 +31,6 @@
 /* ---Фильтр---- */
 .filtr__list {
   @include centered-flex();
-  @extend %list;
   margin-bottom: 50px;
 }
 
@@ -68,7 +67,6 @@
 
 /* ---Содержание---- */
 .portfolio__list {
-  @extend %list;
   @extend %cards__list;
 }
 
@@ -103,8 +101,6 @@
 }
 
 .portfolio__link {
-  @extend %link;
-
   &:hover .portfolio__block-card,
   &:focus .portfolio__block-card {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
