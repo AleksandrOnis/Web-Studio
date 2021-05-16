@@ -168,10 +168,11 @@ img {
 
 .page-header__container {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
   padding-top: 16px;
   padding-bottom: 16px;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .page-header__logo--color {
@@ -347,9 +348,9 @@ img {
   color: #ffffff;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .page-footer__join {
-    margin-left: 165px;
+    margin-right: 93px;
   }
 }
 
@@ -399,7 +400,20 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe__form {
+    flex-direction: row;
+  }
+  .subscribe__field {
+    margin-right: 12px;
+    width: 358px;
+  }
+}
+
 .page-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 60px 0;
   background-color: #2f303a;
 }
@@ -447,15 +461,38 @@ img {
   .page-footer__container {
     display: inline-flex;
     flex-wrap: wrap;
+    padding-left: 76px;
     align-items: baseline;
   }
   .page-footer__footer-contact {
-    margin-left: 76px;
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .page-footer__container {
+    flex-wrap: nowrap;
+    padding-left: 15px;
+  }
+  .page-footer__footer-contact {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
+  .footer-contact__item {
+    display: flex;
+    margin-right: auto;
+  }
+  .page-footer__title {
+    display: flex;
+    margin-right: auto;
+  }
+  .footer-contact__logo {
+    display: flex;
+    margin-right: auto;
   }
 }
 
 .banner {
-  display: flex;
   margin: 0 auto;
   text-align: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/banner-mobile.jpg");

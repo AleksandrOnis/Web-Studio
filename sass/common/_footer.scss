@@ -1,4 +1,5 @@
 .page-footer {
+  @include centered-flex(); 
   padding: 60px 0;
   background-color: $bg-secondary-color;
 }
@@ -42,89 +43,44 @@
 }
 
 @media screen and (min-width: $tablet) {
+
   .page-footer__container {
     display: inline-flex;
     flex-wrap: wrap;
+    padding-left: 76px;
     align-items: baseline;
   }
+
   .page-footer__footer-contact {
-    margin-left: 76px;
+    margin-right: 165px;
   }
-  
 }
 
+@media screen and (min-width: $desktop) {
 
+  .page-footer__container {
+    flex-wrap: nowrap;
+    padding-left: 15px;
+  }
 
-// .footer-contact__list {
-//   display: flex;
-//   flex-direction: column;
-//   font-weight: 400;
-//   line-height: 1.71;
-//   color: rgba(255, 255, 255, 0.6);
-// }
+  .page-footer__footer-contact {
+    margin-right: 70px;
+    margin-bottom: 0;
+  }
 
+  .footer-contact__item {
+    display: flex;
+    margin-right: auto;
+    
+  }
 
-// .footer-contact__link {
-// }
+  .page-footer__title {
+    display: flex;
+    margin-right: auto;
+  }
 
-
-
-
-
-
-
-
-
-// .page-footer {
-//   padding: 60px 0;
-//   background-color: $bg-secondary-color;
-// }
-// .page-footer__container {
-//   @extend %container;
-//   display: flex;
-//   align-items: baseline;
-// }
-
-// .page-footer__footer-contact {
-//   font-size: 14px;
-//   line-height: 1.71;
-// }
-
-// .footer-contact__logo {
-//   display: inline-block;
-//   margin-bottom: 20px;
-
-//   &--color {
-//     color: #ffffff;
-//   }
-// }
-// @media screen {
-  
-// }
-// .page-footer__title {
-//   font-weight: bold;
-//   font-size: 14px;
-//   line-height: 16px;
-//   letter-spacing: 1.14;
-//   text-transform: uppercase;
-//   color: #ffffff;
-// }
-
-// .footer-contact__list {
-//   display: flex;
-//   flex-direction: column;
-//   font-weight: 400;
-//   line-height: 1.71;
-//   color: rgba(255, 255, 255, 0.6);
-// }
-
-// .footer-contact__item:not(:last-child) {
-//   margin-bottom: 9px;
-// }
-
-// .footer-contact__link {
-// }
-
-// .footer-contact__map {
-//   color: #ffffff;
-// }
+  .footer-contact__logo {
+    display: flex;
+    margin-right: auto;
+  }
+}

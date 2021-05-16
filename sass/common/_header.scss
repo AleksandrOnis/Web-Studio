@@ -4,11 +4,10 @@
 }
 
 .page-header__container {
-  display: flex;
+  @include centered-flex(); 
+  justify-content: space-between;
   padding-top: 16px;
   padding-bottom: 16px;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .page-header__logo {
