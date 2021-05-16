@@ -95,5 +95,19 @@ img {
     background-color: $accent-color;
     border-radius: 50%;
   }
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    border-radius: 50%;
+  }
+}
+
+.social-links__icon {
+
+  .social-links__link:hover &,
+  .social-links__link:focus & {
+    color: #ffffff;
+    }
 }
 

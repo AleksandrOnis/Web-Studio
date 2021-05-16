@@ -1,41 +1,204 @@
+@import '../utils/placeholders';
+
+// Баннер
 .banner {
+  max-width: 100vmax;
   margin: 0 auto;
-  text-align: center;
+  min-width: 480px;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url('/images/banner-mobile.jpg');
-  background-position: center;
-  background-size: cover;
-  background-color: var(--bg-secondary-color);
+    url('/images/banner/banner-m480.jpg');
 
   @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-    .banner {
-      background-image: 
-      url('/images/banner-mobile@2x.jpg');
-    }
+    background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('/images/banner/banner-m960@2x.jpg');
   }
+  background-size: cover;
 }
 
 .banner__container {
   padding: 118px 0;
-  width: 480px;
-  height: 400px;
-
+  text-align: center;
 }
 
 .banner__title {
-  @extend %title-h1;
+  display: inline-block;
+  margin-bottom: 30px;
+  width: 360px;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #ffffff;
 }
 
 .banner__btn-order {
   @extend %btn;
-  margin-top: 30px;
 }
+
+// Наши преимущества
+
+.advantages__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.advantages__thumb {
+  @include centered-flex();
+  margin-bottom: 30px;
+  width: 450px;
+  height: 120px;
+  background-color: $bg-btn-additional;
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.advantages__caption {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  margin-bottom: 10px;
+  text-align: center;
+  color: $title-text-color;
+}
+
+.advantages__text {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+// Чем мы занимаемся
+
+@media screen and (max-width: ($desktop - 1px)) {
+  .working {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
+}
+
+// Наша команда
+
+.team {
+  background-color: $bg-btn-additional;
+  min-width: 480px;
+}
+
+.team__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.team__title {
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.18;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: $title-text-color;
+}
+
+.team__item {
+  box-shadow: 
+    0px 2px 1px 0px rgba(0, 0, 0, 0.2), 
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  background-color: #ffffff;
+}
+
+.team__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.team__thumb {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+
+.team__name {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.19;
+  text-align: center;
+  color: $title-text-color;
+}
+
+.team__text {
+  margin-bottom: 16px;
+  font-size: 16px;
+  line-height: 1.19px;
+  text-align: center;
+}
+
+// /* ---Постоянные клиенты--- */
+
+.clients__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.clients__title {
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.18;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  color: $title-text-color;
+}
+
+.clients__list {
+  @extend %cards__list;
+}
+
+.clients__item {
+  @include cards__item(calc((100% - 60px) / 2));
+}
+
+.clients__link {
+  @include centered-flex();
+  padding: 16px 0;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border-color $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+
+.clients__icon {
+
+  .clients__link:hover &,
+  .clients__link:focus & {
+    color: $accent-color;
+  }
+}
+
+
+
+
 
 
 // .banner {
@@ -143,19 +306,6 @@
 // }
 
 // /* ---Наша команда--- */
-// .team {
-//   @extend %section;
-//   background-color: #f5f4fa;
-
-//   .social-links__link:hover .social-links__icon,
-//   .social-links__link:focus .social-links__icon {
-//     color: #ffffff;
-//   }
-// }
-
-// .team__container {
-//   @extend %container;
-// }
 
 // .team__title {
 //   @extend %title-h2;

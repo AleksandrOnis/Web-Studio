@@ -1,10 +1,5 @@
 @import './mixins';
 
-%section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 %btn {
   @include centered-flex(inline-flex);
   display: inline-flex;
@@ -33,29 +28,29 @@
   margin-left: -30px;
 }
 
-%title-h1 {
-  max-width: 696px;
-  margin: 0 auto;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-}
+// %title-h1 {
+//   max-width: 696px;
+//   margin: 0 auto;
+//   font-weight: 900;
+//   font-size: 44px;
+//   line-height: 1.36;
+//   letter-spacing: 0.06em;
+//   text-transform: uppercase;
+//   color: #ffffff;
+// }
 
-%title-h2 {
-  margin-bottom: 50px;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  text-transform: uppercase;
-  color: $title-text-color;
-}
+// %title-h2 {
+//   margin-bottom: 50px;
+//   font-size: 36px;
+//   line-height: 1.17;
+//   text-align: center;
+//   text-transform: uppercase;
+//   color: $title-text-color;
+// }
 
-%title-h3 {
-  font-size: 14px;
-  line-height: 1.17;
-  text-transform: uppercase;
-  color: $title-text-color;
-}
+// %title-h3 {
+//   font-size: 28px;
+//   line-height: 1.18;
+//   text-transform: uppercase;
+//   color: $title-text-color;
+// }
