@@ -722,6 +722,22 @@ img {
   flex-basis: calc((100% - 60px) / 2);
 }
 
+@media screen and (min-width: 768px) {
+  .clients__item {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 90px) / 3);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    margin-top: 30px;
+    margin-left: 30px;
+    flex-basis: calc((100% - 180px) / 6);
+  }
+}
+
 .clients__link {
   display: flex;
   align-items: center;

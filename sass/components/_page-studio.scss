@@ -217,6 +217,14 @@
 
 .clients__item {
   @include cards__item(calc((100% - 60px) / 2));
+
+  @media screen and (min-width: $tablet) {
+    @include cards__item(calc((100% - 90px) / 3));
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include cards__item(calc((100% - 180px) / 6));
+  }
 }
 
 .clients__link {
