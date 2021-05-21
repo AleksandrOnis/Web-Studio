@@ -17,9 +17,9 @@
   }
 }
 
-@media screen and (max-width: ($tablet - 1px)) {
+@media screen and (max-width: ($tablet - 0.02px)) {
   
-  .page-header__btn-menu {
+  .mobile-menu__btn-menu {
     padding: 0;
     background: #ffffff;
     cursor: pointer;
@@ -28,12 +28,11 @@
     border: none;
   }
 
-  .page-header__icon-menu {
+  .mobile-menu__icon-menu {
     color: $title-text-color;
-    transition: color $duration $timing-function;
     
-    .page-header__btn-menu:hover &,
-    .page-header__btn-menu:focus & {
+    .mobile-menu__btn-menu:hover &,
+    .mobile-menu__btn-menu:focus & {
       color: $accent-color;
     }
   }
@@ -57,8 +56,8 @@
     padding-top: 21px;
     padding-bottom: 21px;
   }
-  .page-header__btn-menu,
-  .page-header__icon-menu {
+  .mobile-menu__btn-menu,
+  .mobile-menu__icon-menu {
     position: absolute !important;
     clip: rect(1px 1px 1px 1px);
     clip: rect(1px, 1px, 1px, 1px);
@@ -70,7 +69,7 @@
   }
 }
 
-@media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
+@media screen and (min-width: $tablet) and (max-width: ($desktop - 0.02px)) {
   
 }
 

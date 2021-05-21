@@ -39,7 +39,7 @@
 }
 
 
-@media screen and (min-width: $tablet) and (max-width: ($desktop - 1px)) {
+@media screen and (min-width: $tablet) and (max-width: ($desktop - 0.02px)) {
   
   .contact__list {
     flex-direction: column;

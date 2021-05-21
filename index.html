@@ -65,14 +65,45 @@
             </a>
           </li>
         </ul>
-        <button class="page-header__btn-menu" type="button">
-          <svg class="page-header__icon icon-menu" width="40" height="40">
-            <use href="./images/icons.svg#menu"></use>
-            <use href="./images/icons.svg#close"></use>
+        <button class="mobile-menu__btn-menu" type="button" data-menu-button>
+          <svg class="btn-menu__icon icon" width="40" height="40">
+            <use class="btn-menu__icon-menu" href="./images/icons.svg#menu"></use>
+            <use class="btn-menu__icon-close" href="./images/icons.svg#close"></use>
           </svg>
         </button>
       </div>
     </header>
+      <div class="mobile-menu" data-menu>
+        <ul class="list mobile-menu__mobile-navigation">
+          <li class="mobile-navigation__item">
+            <a class="link mobile-navigation__link mobile-navigation__link--selected" href="./index.html">Cтудия</a>
+          </li>
+          <li class="link mobile-navigation__item">
+            <a class="link mobile-navigation__link href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="link mobile-navigation__item">
+            <a class="link mobile-navigation__link href="./">Контакты</a>
+          </li>
+        </ul>
+        <ul class="list mobile-menu__mobile-contact">
+          <li class="mobile-contact__item">
+            <a
+              class="link mobile-contact__link"
+              href="tel:+380961111111"
+            >
+              +38 096 111 11 11
+            </a>
+          </li>                
+          <li class="mobile-contact__item">
+            <a
+              class="link mobile-contact__link"
+              href="mailto:info@devstudio.com"
+            >
+                info@devstudio.com
+            </a>
+          </li>
+        </ul>   
+      </div>        
     <main>
       <!-- Рекламный банер -->
       <section class="banner">
@@ -627,5 +658,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

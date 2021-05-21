@@ -57,7 +57,7 @@ img {
   padding: 0 15px;
   width: $tablet;
 
-  @media screen and (max-width: ($tablet - 1px)) {
+  @media screen and (max-width: ($tablet - 0.02px)) {
     width: $mobile;
   }
 

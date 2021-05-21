@@ -1,0 +1,52 @@
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    transition: 0.5s;
+    z-index: 99;
+
+    &.is-open {
+      opacity: 1;
+    }
+  }
+  
+  .mobile-menu__btn-menu {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: transform $duration $timing-function;
+    border: none;
+    background-color: transparent;
+
+    @media screen and (min-width: $tablet) {
+      display: none;
+    }
+  }
+
+  .is-open .btn-menu__icon-menu {
+  display: none;
+}
+
+.mobile-menu__icon-menu {
+  color: $title-text-color;
+  
+  .mobile-menu__btn-menu:hover &,
+  .mobile-menu__btn-menu:focus & {
+    color: $accent-color;
+  }
+}
+
+.btn-menu__icon-close {
+  display: none;
+
+  .is-open & {
+    display: block;
+  }
+}
+
+
+
