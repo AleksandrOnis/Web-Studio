@@ -17,55 +17,11 @@
   }
 }
 
-@media screen and (max-width: ($tablet - 0.02px)) {
-  
-  .mobile-menu__btn-menu {
-    padding: 0;
-    background: #ffffff;
-    cursor: pointer;
-    transition: transform $duration $timing-function;
-    outline: none;
-    border: none;
-  }
-
-  .mobile-menu__icon-menu {
-    color: $title-text-color;
-    
-    .mobile-menu__btn-menu:hover &,
-    .mobile-menu__btn-menu:focus & {
-      color: $accent-color;
-    }
-  }
-
-  .navigation,
-  .contact__list {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
-  }
-}
-
 @media screen and (min-width: $tablet) {
   
   .page-header__container {
     padding-top: 21px;
     padding-bottom: 21px;
-  }
-  .mobile-menu__btn-menu,
-  .mobile-menu__icon-menu {
-    position: absolute !important;
-    clip: rect(1px 1px 1px 1px);
-    clip: rect(1px, 1px, 1px, 1px);
-    padding: 0 !important;
-    border: 0 !important;
-    height: 1px !important;
-    width: 1px !important;
-    overflow: hidden;
   }
 }
 
