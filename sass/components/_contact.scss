@@ -22,10 +22,10 @@
     }
   }
 
-  .contact__icon {
+  .contact__icon-telephone, 
+  .contact__icon-envelope {
     color: #757575;
     margin-right: 8px;
-
     .contact__link:hover &,
     .contact__link:focus & {
       color: $accent-color;
@@ -49,6 +49,16 @@
       &:not(:first-child) {
       margin-top: 10px;
     }
+  }
+
+  .contact__icon-telephone {
+    width: 10px;
+    height: 14px;
+  }
+
+  .contact__icon-envelope {
+    width: 14px;
+    height: 10px;
   }
 }
 

@@ -1,0 +1,13 @@
+@media screen and (max-width: ($desktop - 0.02px)) {
+  .working {
+    display: none;
+  }
+}
+
+.working__container {
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
+    padding-top: 0;
+    padding-bottom: 94px;
+  }
+}

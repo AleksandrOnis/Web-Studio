@@ -1,0 +1,178 @@
+// .banner {
+//   display: flex;
+//   padding: 200px 0;
+//   margin: 0 auto;
+//   text-align: center;
+//   max-width: 1600px;
+//   height: 600px;
+//   background-image: linear-gradient(
+//       to right,
+//       rgba(47, 48, 58, 0.4),
+//       rgba(47, 48, 58, 0.4)
+//     ),
+//     url('../images/banner.jpg');
+//   background-position: center;
+//   background-size: cover;
+//   background-color: var(--bg-secondary-color);
+// }
+
+// .banner__container {
+//   @extend %container;
+// }
+
+// .banner__title {
+//   @extend %title-h1;
+// }
+
+// .banner__btn-order {
+//   @extend %btn;
+//   margin-top: 30px;
+// }
+
+// /* ---Наши преимущества--- */
+// .advantages {
+//   padding-top: 94px;
+// }
+
+// .advantages__container {
+//   @extend %container;
+// }
+
+// .advantages__title {
+//   @extend %title-h2;
+// }
+
+// .advantages__list {
+//   @extend %cards__list;
+// }
+
+// .advantages__item {
+//   @include cards__item(calc((100% - 120px) / 4));
+// }
+
+// .advantages__thumb {
+//   padding: 25px 0;
+//   margin-bottom: 30px;
+//   max-width: 270px;
+//   text-align: center;
+//   background-color: $bg-btn-filtr;
+// }
+
+// .advantages__caption {
+//   @extend %title-h3;
+// }
+
+// .advantages__text {
+//   margin-top: 10px;
+//   font-size: 14px;
+//   line-height: 1.71;
+// }
+
+// /* ---Чем мы занимаемся--- */
+// .working {
+//   @extend %section;
+// }
+
+// .working__container {
+//   @extend %container;
+// }
+
+// .working__title {
+//   @extend %title-h2;
+// }
+
+// .working__list {
+//   @extend %cards__list;
+// }
+
+// .working__item {
+//   @include cards__item();
+//   position: relative;
+// }
+
+// .working__thumb {
+//   position: absolute;
+//   left: 0;
+//   bottom: 0;
+//   padding: 27px 0;
+//   width: 100%;
+//   text-align: center;
+//   text-transform: uppercase;
+//   color: #ffffff;
+//   background-color: rgba(47, 48, 58, 0.8);
+// }
+
+// /* ---Наша команда--- */
+
+// .team__title {
+//   @extend %title-h2;
+// }
+
+// .team__list {
+//   @extend %cards__list;
+// }
+
+// .team__item {
+//   @include cards__item(calc((100% - 120px) / 4));
+//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+//     0px 2px 1px rgba(0, 0, 0, 0.2);
+//   border-radius: 0px 0px 4px 4px;
+//   background-color: #ffffff;
+// }
+
+// .team__thumb {
+//   padding: 30px 32px;
+// }
+
+// .team__name {
+//   @extend %title-h3;
+//   text-align: center;
+// }
+
+// .team__text {
+//   margin-bottom: 16px;
+//   text-align: center;
+//   font-size: 16px;
+//   line-height: 1.17;
+// }
+
+// /* ---Постоянные клиенты--- */
+// .clients {
+//   @extend %section;
+// }
+
+// .clients__container {
+//   @extend %container;
+// }
+
+// .clients__title {
+//   @extend %title-h2;
+// }
+
+// .clients__list {
+//   @extend %cards__list;
+// }
+
+// .clients__item {
+//   @include cards__item(calc((100% - 180px) / 6));
+// }
+
+// .clients__link {
+//   @include centered-flex();
+//   padding: 16px 0;
+//   border: 1px solid #afb1b8;
+//   border-radius: 4px;
+//   transition: border-color $duration $timing-function;
+
+//   &:hover,
+//   &:focus {
+//     border-color: $accent-color;
+//   }
+// }
+
+// .clients__icon {
+//   .clients__link:hover &,
+//   .clients__link:focus & {
+//     color: $accent-color;
+//   }
+// }

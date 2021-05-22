@@ -1,0 +1,33 @@
+.advantages__container {
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+.advantages__thumb {
+  @include centered-flex();
+  margin-bottom: 30px;
+  width: 450px;
+  height: 120px;
+  background-color: $bg-btn-additional;
+}
+
+.advantages__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.advantages__caption {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  margin-bottom: 10px;
+  text-align: center;
+  color: $title-text-color;
+}
+
+.advantages__text {
+  font-size: 14px;
+  line-height: 1.71;
+}
