@@ -37,12 +37,14 @@ html {
   box-sizing: border-box;
 }
 
-*::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: inherit;
-  outline: 1px solid red;
 }
 
 body {
+  min-width: 480px;
   font-family: 'Roboto', 'arial', sans-serif;
   letter-spacing: 0.03em;
   color: #757575;
@@ -86,12 +88,18 @@ img {
 }
 
 .container {
-  margin: 0 auto;
   padding: 60px 15px;
-  max-width: 480px;
+  width: 100%;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
@@ -644,7 +652,6 @@ img {
 
 .banner {
   margin: 0 auto;
-  min-width: 480px;
   background-size: cover;
 }
 
@@ -716,10 +723,6 @@ img {
   }
 }
 
-.advantages {
-  min-width: 480px;
-}
-
 @media screen and (min-width: 1200px) {
   .advantages__container {
     padding-top: 94px;
@@ -731,6 +734,12 @@ img {
   .advantages__item:not(:last-child) {
     margin-bottom: 30px;
   }
+}
+
+.advantages__item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc(100% - 30px);
 }
 
 @media screen and (min-width: 768px) {
@@ -779,10 +788,6 @@ img {
   line-height: 1.71;
 }
 
-.working {
-  min-width: 480px;
-}
-
 @media screen and (max-width: 1199.98px) {
   .working {
     display: none;
@@ -818,7 +823,6 @@ img {
 }
 
 .team {
-  min-width: 480px;
   background-color: #f5f4fa;
 }
 
@@ -830,6 +834,9 @@ img {
 }
 
 .team__item {
+  margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc(100% - 30px);
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   background-color: #ffffff;
 }
@@ -847,12 +854,6 @@ img {
     margin-top: 30px;
     margin-left: 30px;
     flex-basis: calc((100% - 120px) / 4);
-  }
-}
-
-@media screen and (max-width: 767.98px) {
-  .team__item:not(:last-child) {
-    margin-bottom: 30px;
   }
 }
 
@@ -881,10 +882,6 @@ img {
   font-size: 16px;
   line-height: 1.19px;
   text-align: center;
-}
-
-.clients {
-  min-width: 480px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -935,7 +932,6 @@ img {
 }
 
 .page-header {
-  min-width: 480px;
   border-bottom: 1px solid #ececec;
   background-color: #ffffff;
 }
@@ -975,7 +971,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-width: 480px;
   background-color: #2f303a;
   background-size: cover;
 }

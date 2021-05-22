@@ -1,5 +1,4 @@
 .team {
-  min-width: 480px;
   background-color: $bg-btn-additional;
 }
 
@@ -12,6 +11,9 @@
 }
 
 .team__item {
+
+  @include cards-position(calc(100% - 30px));
+
   box-shadow: 
     0px 2px 1px 0px rgba(0, 0, 0, 0.2), 
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
@@ -24,13 +26,6 @@
 
   @media screen and (min-width: $desktop) {
     @include cards-position(calc((100% - 120px) / 4));
-  }
-}
-
-@media screen and (max-width: $tablet - 0.02px) {
-
-  .team__item:not(:last-child) {
-  margin-bottom: 30px;
   }
 }
 

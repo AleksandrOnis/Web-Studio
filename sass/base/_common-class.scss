@@ -2,15 +2,15 @@ html {
   box-sizing: border-box;
 }
 
-* {
-  &::after,
-  &::before {
-    box-sizing: inherit;
-    outline: 1px solid red;
-  }
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  // outline: 2px solid red;
 }
 
 body {
+  min-width: 480px;
   font-family: 'Roboto', 'arial', sans-serif;
   letter-spacing: 0.03em;
   color: $primary-text-color;

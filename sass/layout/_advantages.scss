@@ -1,8 +1,6 @@
-.advantages {
-  min-width: 480px;
-}
 
 .advantages__container {
+
   @media screen and (min-width: $desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -18,6 +16,8 @@
 
 .advantages__item {
 
+  @include cards-position(calc(100% - 30px));
+  
   @media screen and (min-width: $tablet) {
     @include cards-position(calc((100% - 60px) / 2));
   }

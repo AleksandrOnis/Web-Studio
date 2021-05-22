@@ -1,6 +1,5 @@
 .page-footer {
   @include centered-flex(); 
-  min-width: 480px;
   background-color: $bg-secondary-color;
   background-size: cover;
 }
