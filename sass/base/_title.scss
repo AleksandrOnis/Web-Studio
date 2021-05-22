@@ -1,0 +1,32 @@
+.title__h1 {
+  margin: 0 auto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.title__h2 {
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.18;
+  text-align: center;
+  text-transform: uppercase;
+  color: $title-text-color;
+  
+  @media screen and (min-width:$desktop) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
+}
+
+.title__h3 {
+  font-size: 28px;
+  line-height: 1.18;
+  text-transform: uppercase;
+  color: $title-text-color;
+}

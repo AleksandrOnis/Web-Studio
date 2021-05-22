@@ -1,9 +1,8 @@
 .page-footer {
   @include centered-flex(); 
-  padding: 60px 0;
   min-width: 480px;
   background-color: $bg-secondary-color;
-  background-size: auto;
+  background-size: cover;
 }
 .page-footer__container {
   display: block;

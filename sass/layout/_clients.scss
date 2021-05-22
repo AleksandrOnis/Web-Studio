@@ -1,33 +1,22 @@
+.clients {
+  min-width: 480px;
+}
+
 .clients__container {
   @media screen and (min-width: $desktop) {
-    padding-top: 0;
-    padding-bottom: 94px;
+    padding: 94px 0;
   }
-}
-
-.clients__title {
-  margin-bottom: 30px;
-  font-size: 28px;
-  line-height: 1.18;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  color: $title-text-color;
-}
-
-.clients__list {
-  @extend %cards__list;
 }
 
 .clients__item {
-  @include cards__item(calc((100% - 60px) / 2));
+  @include cards-position(calc((100% - 60px) / 2));
 
-  @media screen and (min-width: $tablet) {
-    @include cards__item(calc((100% - 90px) / 3));
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 0.02px) {
+    @include cards-position(calc((100% - 90px) / 3));
   }
 
   @media screen and (min-width: $desktop) {
-    @include cards__item(calc((100% - 180px) / 6));
+    @include cards-position(calc((100% - 180px) / 6));
   }
 }
 

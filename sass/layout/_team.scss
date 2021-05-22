@@ -1,6 +1,6 @@
 .team {
-  background-color: $bg-btn-additional;
   min-width: 480px;
+  background-color: $bg-btn-additional;
 }
 
 .team__container {
@@ -11,16 +11,6 @@
   }
 }
 
-.team__title {
-  margin-bottom: 30px;
-  font-size: 28px;
-  line-height: 1.18;
-  font-weight: 700;
-  text-align: center;
-  text-transform: uppercase;
-  color: $title-text-color;
-}
-
 .team__item {
   box-shadow: 
     0px 2px 1px 0px rgba(0, 0, 0, 0.2), 
@@ -28,22 +18,29 @@
     0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   background-color: #ffffff;
 
-  @media screen and (min-width: $tablet) {
-    @include cards__item(calc((100% - 60px) / 2));
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 0.02px) {
+    @include cards-position(calc((100% - 60px) / 2));
   }
 
   @media screen and (min-width: $desktop) {
-    @include cards__item(calc((100% - 120px) / 4));
+    @include cards-position(calc((100% - 120px) / 4));
   }
 }
 
-.team__item:not(:last-child) {
+@media screen and (max-width: $tablet - 0.02px) {
+
+  .team__item:not(:last-child) {
   margin-bottom: 30px;
+  }
 }
 
 .team__thumb {
   padding-top: 30px;
   padding-bottom: 24px;
+
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 30px;
+  }
 }
 
 .team__name {

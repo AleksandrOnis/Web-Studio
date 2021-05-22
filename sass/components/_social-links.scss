@@ -1,0 +1,35 @@
+.social-links__list {
+  @include centered-flex();
+}
+
+.social-links__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-links__link {
+  @include centered-flex(inline-flex);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color $duration $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    border-radius: 50%;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    border-radius: 50%;
+  }
+}
+
+.social-links__icon {
+
+  .social-links__link:hover &,
+  .social-links__link:focus & {
+    color: #ffffff;
+    }
+}

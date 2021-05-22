@@ -50,12 +50,8 @@
   }
 }
 
-.portfolio__list {
-  @extend %cards__list;
-}
-
 .portfolio__item {
-  @include cards__item();
+  @include cards-position();
   transition: box-shadow $duration $timing-function;
 }
 
@@ -193,11 +189,11 @@
 
 // /* ---Содержание---- */
 // .portfolio__list {
-//   @extend %cards__list;
+//   .cards;
 // }
 
 // .portfolio__item {
-//   @include cards__item();
+//   @include cards-position();
 //   transition: box-shadow $duration $timing-function;
 // }
 

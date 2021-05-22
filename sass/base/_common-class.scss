@@ -6,6 +6,7 @@ html {
   &::after,
   &::before {
     box-sizing: inherit;
+    outline: 1px solid red;
   }
 }
 
@@ -50,50 +51,5 @@ img {
   fill: currentColor;
   color: #afb1b8;
   transition: color $duration $timing-function;
-}
-
-.logo {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 1.17;
-  text-decoration: none;
-  color: $accent-color;
-}
-
-.social-links__list {
-  @include centered-flex();
-}
-
-.social-links__item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.social-links__link {
-  @include centered-flex(inline-flex);
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  transition: background-color $duration $timing-function;
-
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
-    border-radius: 50%;
-  }
-
-  &:hover,
-  &:focus {
-    background-color: $accent-color;
-    border-radius: 50%;
-  }
-}
-
-.social-links__icon {
-
-  .social-links__link:hover &,
-  .social-links__link:focus & {
-    color: #ffffff;
-    }
 }
 
