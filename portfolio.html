@@ -43,7 +43,7 @@
               class="link contact__link"
               href="mailto:info@devstudio.com"
             >
-              <svg class="contact__icon icon" width="16" height="12">
+              <svg class="contact__icon-envelope icon" width="16" height="12">
                 <use
                   href="./images/icons.svg#envelope"
                 ></use>
@@ -56,7 +56,7 @@
               class="link contact__link"
               href="tel:+380961111111"
             >
-              <svg class="contact__icon icon" width="10" height="16">
+              <svg class="contact__icon-telephone icon" width="10" height="16">
                 <use
                   href="./images/icons.svg#telephone"
                 ></use>
@@ -65,14 +65,67 @@
             </a>
           </li>
         </ul>
-        <button class="page-header__btn-menu" type="button">
-          <svg class="page-header__icon icon-menu" width="40" height="40">
-            <use href="./images/icons.svg#menu"></use>
-            <use href="./images/icons.svg#close"></use>
+        <button class="mobile-menu__btn-menu" type="button" data-menu-button>
+          <svg class="btn-menu__icon icon" width="40" height="40">
+            <use class="btn-menu__icon-menu" href="./images/icons.svg#menu"></use>
+            <use class="btn-menu__icon-close" href="./images/icons.svg#close"></use>
           </svg>
         </button>
       </div>
     </header>
+      <div class="mobile-menu" data-menu>
+        <ul class="list mobile-menu__mobile-navigation">
+          <li class="mobile-navigation__item">
+            <a class="link mobile-navigation__link mobile-navigation__link--selected" href="./index.html">Cтудия</a>
+          </li>
+          <li class="link mobile-navigation__item">
+            <a class="link mobile-navigation__link href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="link mobile-navigation__item">
+            <a class="link mobile-navigation__link href="./">Контакты</a>
+          </li>
+        </ul>
+        <ul class="list mobile-menu__mobile-contact">
+          <li class="mobile-contact__item">
+            <a
+              class="link mobile-contact__link"
+              href="tel:+380961111111"
+            >
+              +38 096 111 11 11
+            </a>
+          </li>                
+          <li class="mobile-contact__item">
+            <a
+              class="link mobile-contact__link"
+              href="mailto:info@devstudio.com"
+            >
+                info@devstudio.com
+            </a>
+          </li>
+        </ul>   
+        <ul class="list mobile-menu__social-links-menu">
+          <li class="social-links-menu__item">
+            <a class="link social-links-menu__link" href=""> 
+              Instagram
+            </a>
+          </li>
+          <li class="social-links-menu__item">
+            <a class="link social-links-menu__link" href=""> 
+              Twitter
+            </a>
+          </li>
+          <li class="social-links-menu__item">
+            <a class="link social-links-menu__link" href=""> 
+              Facebook
+            </a>
+          </li>
+          <li class="social-links-menu__item">
+            <a class="link social-links-menu__link" href=""> 
+              Linkedln
+            </a>
+          </li>
+        </ul>
+      </div>        
     <main>
       <section class="portfolio">
         <div class="portfolio__container container">
@@ -96,7 +149,7 @@
             </li>
           </ul>
           <!-- Содержимое -->
-          <ul class="list portfolio__list">
+          <ul class="list portfolio__list cards">
             <li class="portfolio__item">
               <a class="link portfolio__link" href="">
                 <div class="portfolio__block-card">
@@ -156,16 +209,16 @@
                         type="image/jpeg"
                       />
                       <img src="./images/Portfolio/poster_New_Orlean_vs_Golden_Star-450.jpg" width="450" alt="Два баскетбольных игрока борются за мяч" />
-                    </picture>                      
-                    <div class="portfolio__thumb">
+                    </picture>     
+                    <div class="portfolio__slider">
                       <p></p>
-                    </div>
-                  </div>
-                  <div class="portfolio__content">
+                    </div>                                         
+                  </div>              
+                  <div class="portfolio__thumb">
                     <h2 class="portfolio__title">
                       Постер <span lang="en">New Orlean vs Golden Star</span>
                     </h2>
-                    <p class="portfolio__category">Дизайн</p>
+                  <p class="portfolio__category">Дизайн</p>
                   </div>
                 </div>
               </a>
@@ -192,11 +245,11 @@
                       />
                       <img src="./images/Portfolio/restaurant_Seafood-450.jpg" width="450" alt="Логотип ресторана" />
                     </picture>                         
-                    <div class="portfolio__thumb">
+                    <div class="portfolio__slider">
                       <p></p>
                     </div>
                   </div>
-                  <div class="portfolio__content">
+                  <div class="portfolio__thumb">
                     <h2 class="portfolio__title">
                       Ресторан <span lang="en">Seafood</span>
                     </h2>
@@ -227,11 +280,11 @@
                       />
                       <img src="./images/Portfolio/project_Prime-450.jpg" width="450" alt="Изображены наушники" />
                     </picture>                     
-                    <div class="portfolio__thumb">
+                    <div class="portfolio__slider">
                       <p></p>
                     </div>
                   </div>
-                  <div class="portfolio__content">
+                  <div class="portfolio__thumb">
                     <h2 class="portfolio__title">
                       Проект <span lang="en">Prime</span>
                     </h2>
@@ -262,11 +315,11 @@
                       />
                       <img src="./images/Portfolio/project_Boxes-450.jpg" width="450" alt="Изображены две коробки" />
                     </picture>   
-                    <div class="portfolio__thumb">
+                    <div class="portfolio__slider">
                       <p></p>
                     </div>
                   </div>
-                  <div class="portfolio__content">
+                  <div class="portfolio__thumb">
                     <h2 class="portfolio__title">
                       Проект <span lang="en">Boxes</span>
                     </h2>
@@ -297,11 +350,11 @@
                       />
                       <img src="./images/Portfolio/Inspiration_has_no_Borders-450.jpg" width="450" alt="Изображение монитора с открытым сайтом на экране" />
                     </picture>                       
-                    <div class="portfolio__thumb">
+                    <div class="portfolio__slider">
                       <p></p>
                     </div>
                   </div>
-                  <div class="portfolio__content">
+                  <div class="portfolio__thumb">
                     <h2 class="portfolio__title" lang="en">
                       Inspiration has no Borders
                     </h2>
@@ -332,11 +385,11 @@
                       />
                       <img src="./images/Portfolio/publication_Limited_Edition-450.jpg" width="450" alt="Изображение каталога" />
                     </picture>                       
-                    <div class="portfolio__thumb">
+                    <div class="portfolio__slider">
                       <p></p>
                     </div>
                   </div>
-                  <div class="portfolio__content">
+                  <div class="portfolio__thumb">
                     <h2 class="portfolio__title">
                       Издание <span lang="en">Limited Edition</span>
                     </h2>
@@ -367,11 +420,11 @@
                       />
                       <img src="./images/Portfolio/project_LAB-450.jpg" width="450" alt="Избражена бирка с названием проекта" />
                     </picture>                       
-                    <div class="portfolio__thumb">
+                    <div class="portfolio__slider">
                       <p></p>
                     </div>
                   </div>
-                  <div class="portfolio__content">
+                  <div class="portfolio__thumb">
                     <h2 class="portfolio__title">
                       Проект <span lang="en">LAB</span>
                     </h2>
@@ -381,8 +434,8 @@
               </a>
             </li>
             <li class="portfolio__item">
-              <a class="link portfolio__link" href=""
-                ><div class="portfolio__block-card">
+              <a class="link portfolio__link" href="">
+                <div class="portfolio__block-card">
                   <div class="portfolio__block-img">
                     <picture>
                       <source
@@ -402,11 +455,11 @@
                       />
                       <img src="./images/Portfolio/Growing_Business-450.jpg" width="450" alt="Изображен ноутбук, а на экране открыт сайт компании" />
                     </picture>                       
-                    <div class="portfolio__thumb">
+                    <div class="portfolio__slider">
                       <p></p>
                     </div>
                   </div>
-                  <div class="portfolio__content">
+                  <div class="portfolio__thumb">
                     <h2 class="portfolio__title" lang="en">Growing Business</h2>
                     <p class="portfolio__category">Приложение</p>
                   </div>
@@ -448,43 +501,43 @@
         <div class="page-footer__join">
           <span class="page-footer__title">Присоединяйтесь</span>
           <ul class="list social-links__list">
-                  <li class="social-links__item">
-                    <a class="link social-links__link" href="">
-                      <svg class="social-links__icon icon" width="20" height="20">
-                        <use
-                          href="./images/icons.svg#instagram">
-                        </use>
-                        </svg>
-                      </a>
-                  </li>
-                  <li class="social-links__item">
-                    <a class="link social-links__link" href="">
-                      <svg class="social-links__icon icon"  width="20" height="20">
-                        <use
-                          href="./images/icons.svg#twitter">
-                        </use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-links__item">
-                    <a class="link social-links__link" href="" >
-                      <svg class="social-links__icon icon" width="20" height="20">
-                        <use
-                          href="./images/icons.svg#facebook">
-                        </use>
-                      </svg>
-                    </a>
-                  </li>
-                  <li class="social-links__item">
-                    <a class="link social-links__link" href=""
-                      ><svg class="social-links__icon icon"  width="20" height="20">
-                        <use
-                          href="./images/icons.svg#linkedin">
-                        </use>
-                      </svg>
-                    </a>
-                  </li>
-                </ul>
+            <li class="social-links__item">
+              <a class="link social-links__link" href="">
+                <svg class="social-links__icon icon" width="20" height="20">
+                  <use
+                    href="./images/icons.svg#instagram">
+                  </use>
+                  </svg>
+                </a>
+            </li>
+            <li class="social-links__item">
+              <a class="link social-links__link" href="">
+                <svg class="social-links__icon icon"  width="20" height="20">
+                  <use
+                    href="./images/icons.svg#twitter">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a class="link social-links__link" href="" >
+                <svg class="social-links__icon icon" width="20" height="20">
+                  <use
+                    href="./images/icons.svg#facebook">
+                  </use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-links__item">
+              <a class="link social-links__link" href=""
+                ><svg class="social-links__icon icon"  width="20" height="20">
+                  <use
+                    href="./images/icons.svg#linkedin">
+                  </use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
         <div class="page-footer__subscribe">
           <span class="page-footer__title">Подпишитесь на рассылку</span>
@@ -510,5 +563,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
