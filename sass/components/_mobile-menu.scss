@@ -14,10 +14,12 @@
   transition: $duration $timing-function;
   opacity: 0;
   z-index: 99;
+  pointer-events: none;
 
   &.is-open {
     left: 0;
     opacity: 1;
+    pointer-events: auto;
   }
 
   @media screen and (min-width: $tablet) {
