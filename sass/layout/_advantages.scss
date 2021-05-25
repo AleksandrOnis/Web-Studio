@@ -7,13 +7,6 @@
   }
 }
 
-@media screen and (max-width: $tablet - 0.02px) {
-
-  .advantages__item:not(:last-child) {
-  margin-bottom: 30px;
-  }
-}
-
 .advantages__item {
 
   @include cards-position(calc(100% - 30px));
@@ -30,7 +23,7 @@
 .advantages__thumb {
   @include centered-flex();
   margin-bottom: 30px;
-  padding: 25px 0;
+  height: 120px;
   background-color: $bg-btn-additional;
 }
 
